@@ -2,6 +2,12 @@
 \BOOKMARK [1][-]{section.2}{Keithley 2110 Digital Multimeter3}{}% 2
 \BOOKMARK [1][-]{section.3}{BSC Laboratory Breadboard Box}{}% 3
 \BOOKMARK [1][-]{section.4}{Digital Oscilloscope}{}% 4
-\BOOKMARK [1][-]{section.5}{Arbitrary Waveform Function Generator}{}% 5
-\BOOKMARK [1][-]{section.6}{Frequency and time measurements}{}% 6
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Tune-able Parameters and useful functions}{section.4}% 5
+\BOOKMARK [1][-]{section.5}{Arbitrary Waveform Function Generator}{}% 6
+\BOOKMARK [1][-]{section.6}{Frequency and time measurements}{}% 7
+\BOOKMARK [2][-]{subsection.6.1}{AC measurement}{section.6}% 8
+\BOOKMARK [1][-]{section.7}{Thevinin Equivalence}{}% 9
+\BOOKMARK [2][-]{subsection.7.1}{2.1.13}{section.7}% 10
+\BOOKMARK [2][-]{subsection.7.2}{2.1.14}{section.7}% 11
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 12
+\BOOKMARK [1][-]{section.9}{Acknowledgments}{}% 13
