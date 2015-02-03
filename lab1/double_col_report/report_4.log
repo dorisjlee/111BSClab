@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  1 FEB 2015 08:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 FEB 2015 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,72 +574,118 @@ Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+txmia on input line 23.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 21.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 23.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 23.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 23.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Overfull \hbox (19.51952pt too wide) in paragraph at lines 25--25
-[]\OT1/txr/bx/n/12 Keithley 2110 Dig-i-tal Mul-ti-me-ter3 (DMM) 
- []
-
-<figure/d_breadboard.jpg, id=32, 3276.24pt x 2457.18pt>
-File: figure/d_breadboard.jpg Graphic file (type jpg)
-
-<use figure/d_breadboard.jpg>
-Package pdftex.def Info: figure/d_breadboard.jpg used on input line 30.
-(pdftex.def)             Requested size: 219.2565pt x 164.409pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 30--31
-[][] 
+Overfull \hbox (4.86432pt too wide) in paragraph at lines 26--27
+[]\OT1/txr/m/n/12 Digital Mul-ti-me-ter (DMM), os-cil-lo-scope,
  []
 
 
-Overfull \hbox (6.5355pt too wide) in paragraph at lines 35--36
+Overfull \hbox (19.87949pt too wide) in paragraph at lines 26--27
+\OT1/txr/m/n/12 to ob-tain mea-sure-ments in ex-per-i-men-tal physics.
+ []
+
+
+Overfull \hbox (3.58353pt too wide) in paragraph at lines 26--27
+\OT1/txr/m/n/12 ther our un-der-stand-ing of lin-ear cir-cuits. Lin-
+ []
+
+
+Overfull \hbox (6.31879pt too wide) in paragraph at lines 27--28
+\OT1/txr/m/n/12 for lin-ear cir-cuits to AC cir-cuits. AC-powered
+ []
+
+
+Overfull \hbox (7.84354pt too wide) in paragraph at lines 27--28
+\OT1/txr/m/n/12 er-cises, we com-pute the er-rors as-so-ci-ated with
+ []
+
+<figure/breadboard.png, id=17, 158.5925pt x 81.30376pt>
+File: figure/breadboard.png Graphic file (type png)
+
+<use figure/breadboard.png>
+Package pdftex.def Info: figure/breadboard.png used on input line 36.
+(pdftex.def)             Requested size: 131.55524pt x 67.4486pt.
+
+Overfull \hbox (6.5355pt too wide) in paragraph at lines 41--42
 \OT1/txr/m/n/12 rapid-protoyping cir-cuits, with-out long chem-
  []
 
 
-Overfull \hbox (4.93808pt too wide) in paragraph at lines 35--36
-\OT1/txr/m/n/12 sense be-cause since B and C is not con-nected,
+Overfull \hbox (0.8588pt too wide) in paragraph at lines 41--42
+\OT1/txr/m/n/12 These re-sult make sense be-cause since B and
  []
 
-<figure/ground_common.png, id=35, 80.7015pt x 84.7968pt>
+<figure/parta.png, id=21, 625.33624pt x 491.8375pt>
+File: figure/parta.png Graphic file (type png)
+ <use figure/parta.png>
+Package pdftex.def Info: figure/parta.png used on input line 46.
+(pdftex.def)             Requested size: 219.2565pt x 172.44589pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 46--47
+ [] 
+ []
+
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./figure/breadboard.png>]
+Overfull \hbox (3.1123pt too wide) in paragraph at lines 53--54
+[]\OT1/txr/m/n/12 e) To again pre-vent the ``float-ing" of com-
+ []
+
+
+Overfull \hbox (0.8108pt too wide) in paragraph at lines 53--54
+\OT1/txr/m/n/12 mon and ground, we con-nect -12V to ground
+ []
+
+
+Overfull \hbox (0.2348pt too wide) in paragraph at lines 53--54
+\OT1/txr/m/n/12 ate the 17V po-ten-tial dif-fer-ence as pre-dicted. 
+ []
+
+<figure/ground_common.png, id=39, 80.7015pt x 84.7968pt>
 File: figure/ground_common.png Graphic file (type png)
 
 <use figure/ground_common.png>
-Package pdftex.def Info: figure/ground_common.png used on input line 40.
+Package pdftex.def Info: figure/ground_common.png used on input line 58.
 (pdftex.def)             Requested size: 109.62825pt x 115.19917pt.
 
-Overfull \hbox (0.52353pt too wide) in paragraph at lines 37--44
-\OT1/txr/m/n/12 nec-es-sar-ily at the same po-ten-tial. If the com-
+Overfull \hbox (1.38751pt too wide) in paragraph at lines 55--62
+ []\OT1/txr/bx/it/12 1.3\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 The read-ings be-t
+ween the 12 out-put and
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (0.52353pt too wide) in paragraph at lines 55--62
+\OT1/txr/m/n/12 nec-es-sar-ily at the same po-ten-tial. If the com-
+ []
 
-<figure/1_7_setup.png, id=38, 175.3752pt x 67.6929pt>
+<figure/1_7_setup.png, id=43, 175.3752pt x 67.6929pt>
 File: figure/1_7_setup.png Graphic file (type png)
 
 <use figure/1_7_setup.png>
-Package pdftex.def Info: figure/1_7_setup.png used on input line 57.
+Package pdftex.def Info: figure/1_7_setup.png used on input line 94.
 (pdftex.def)             Requested size: 219.2565pt x 84.6376pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 57--59
+Overfull \hbox (9.0pt too wide) in paragraph at lines 94--96
  [] 
  []
 
@@ -647,43 +693,29 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 57--59
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (0.1508pt too wide) in paragraph at lines 62--64
+Overfull \hbox (0.1508pt too wide) in paragraph at lines 99--101
  []\OT1/txr/bx/it/12 1.7\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 a) De-pend-ing on 
 the DMM setup, it can
  []
 
-
-Overfull \hbox (7.54279pt too wide) in paragraph at lines 62--64
-\OT1/txr/m/n/12 to con-nect the DMM in par-lalle with the 10k$
-$
- []
-
-
-Overfull \hbox (0.5115pt too wide) in paragraph at lines 62--64
-\OT1/txr/m/n/12 Ohm's law we can com-pute the cur-rent flow-
- []
-
-[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./figure/d_breadboard.jpg>]
-Overfull \hbox (4.05151pt too wide) in paragraph at lines 67--71
+[2 <./figure/parta.png> <./figure/ground_common.png>]
+Overfull \hbox (4.05151pt too wide) in paragraph at lines 104--108
 \OT1/txr/m/n/12 which is ap-prox-i-mately the same as pre-dicted
  []
 
 
-Overfull \hbox (2.2748pt too wide) in paragraph at lines 67--71
+Overfull \hbox (2.2748pt too wide) in paragraph at lines 104--108
 \OT1/txr/m/n/12 b) We con-nected the DMM across the 470k$
 $
  []
 
 
-Overfull \hbox (2.37152pt too wide) in paragraph at lines 67--71
+Overfull \hbox (2.37152pt too wide) in paragraph at lines 104--108
 \OT1/txr/m/n/12 com-pute the ac-tual read-ing range as 24.079V
  []
 
 
-Overfull \hbox (18.36201pt too wide) detected at line 74
+Overfull \hbox (18.36201pt too wide) detected at line 111
 []\OT1/txr/m/n/12 0\OML/txmi/m/it/12 :\OT1/txr/m/n/12 012% \OMS/txsy/m/n/12 ^^B
  \OT1/txr/m/n/12 24\OML/txmi/m/it/12 :\OT1/txr/m/n/12 079\OML/txmi/m/it/12 V \O
 T1/txr/m/n/12 + 0\OML/txmi/m/it/12 :\OT1/txr/m/n/12 004% \OMS/txsy/m/n/12 ^^B \
@@ -692,160 +724,609 @@ OT1/txr/m/n/12 10\OML/txmi/m/it/12 V \OT1/txr/m/n/12 = 3\OML/txmi/m/it/12 :\OT1
  []
 
 
-Overfull \hbox (2.45549pt too wide) in paragraph at lines 86--88
-\OT1/txr/m/n/12 Comparing this re-sult with val-ues from (REF
+Overfull \hbox (6.01953pt too wide) in paragraph at lines 130--136
+\OT1/txr/m/n/12 there-fore com-pute the un-cer-tainty of the read-
  []
 
 
-Overfull \hbox (13.00034pt too wide) in paragraph at lines 96--97
-[]\OT1/txr/m/n/12 The cur-rent mea-sured di-rectly by the DMM
+Underfull \hbox (badness 10000) in paragraph at lines 130--136
+
  []
 
 
-Overfull \hbox (4.41805pt too wide) detected at line 111
+Overfull \hbox (0.71552pt too wide) in paragraph at lines 130--136
+\OT1/txr/m/n/12 tirely ac-counted for by this mea-sure-ment un-
+ []
+
+[3 <./figure/1_7_setup.png>]
+Overfull \hbox (3.34352pt too wide) in paragraph at lines 144--147
+\OT1/txr/m/n/12 We con-nect the am-me-ter in se-ries and change
+ []
+
+
+Overfull \hbox (4.94832pt too wide) in paragraph at lines 151--152
+[]\OT1/txr/m/n/12 c) The $10\OML/txmi/m/it/12 k\OT1/txr/m/n/12 
+$ re-sis-tor would reach its max-
+ []
+
+
+Overfull \hbox (12.67952pt too wide) in paragraph at lines 151--152
+\OT1/txr/m/n/12 re-sis-tor with a smaller value reaches the thresh-
+ []
+
+
+Overfull \hbox (10.38751pt too wide) in paragraph at lines 157--158
+\OT1/txr/m/n/12 may re-sis-tors in se-ries, but re-quire many added
+ []
+
+
+Overfull \hbox (4.41805pt too wide) detected at line 164
 \OT1/txr/m/n/12 0\OML/txmi/m/it/12 :\OT1/txr/m/n/12 012%(5\OML/txmi/m/it/12 :\O
 T1/txr/m/n/12 0488\OML/txmi/m/it/12 V\OT1/txr/m/n/12 ) + 0\OML/txmi/m/it/12 :\O
 T1/txr/m/n/12 004%(10\OML/txmi/m/it/12 V\OT1/txr/m/n/12 ) = 1\OML/txmi/m/it/12 
 :\OT1/txr/m/n/12 0059\OML/txmi/m/it/12 V
  []
 
-[2 <./figure/ground_common.png> <./figure/1_7_setup.png>]
-Overfull \hbox (4.82755pt too wide) in paragraph at lines 138--144
+
+Overfull \hbox (9.7875pt too wide) in paragraph at lines 173--174
+ []\OT1/txr/bx/it/12 1.18\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 a) By switch-ing 
+the os-cil-lo-scope's ``cou-
+ []
+
+
+Overfull \hbox (0.48677pt too wide) in paragraph at lines 173--174
+\OT1/txr/m/n/12 pling" op-tion from DC to AC, we see rapidly
+ []
+
+[4]
+Overfull \hbox (4.82755pt too wide) in paragraph at lines 194--200
 [][] 
  []
 
 
-Overfull \hbox (2.72034pt too wide) in paragraph at lines 134--147
+Overfull \hbox (2.72034pt too wide) in paragraph at lines 190--203
 []\OT1/txr/m/n/12 c) Ge-o-met-ri-cally, we can see that the $\OML/txmi/m/it/12 
 V[]$
  []
 
-<figure/ACweird.png, id=84, 537.4479pt x 147.4308pt>
+<figure/1_20.png, id=104, 394.47375pt x 285.065pt>
+File: figure/1_20.png Graphic file (type png)
+ <use figure/1_20.png>
+Package pdftex.def Info: figure/1_20.png used on input line 207.
+(pdftex.def)             Requested size: 219.2565pt x 158.44348pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 207--208
+[][] 
+ []
+
+
+Overfull \hbox (8.62352pt too wide) in paragraph at lines 211--213
+\OT1/txr/m/n/12 fre-quency ge-o-met-ri-cally rather than arith-meti-
+ []
+
+
+Overfull \hbox (4.42351pt too wide) in paragraph at lines 211--213
+\OT1/txr/m/n/12 ues agree within 5% over the fre-quency range
+ []
+
+
+Overfull \hbox (6.81151pt too wide) in paragraph at lines 211--213
+\OT1/txr/m/n/12 be-low 1MHz. Ac-cord-ing to the Keith-ley 2100
+ []
+
+<figure/ACweird.png, id=106, 537.4479pt x 147.4308pt>
 File: figure/ACweird.png Graphic file (type png)
  <use figure/ACweird.png>
-Package pdftex.def Info: figure/ACweird.png used on input line 151.
+Package pdftex.def Info: figure/ACweird.png used on input line 215.
 (pdftex.def)             Requested size: 438.513pt x 120.29114pt.
 
-Overfull \hbox (6.93077pt too wide) in paragraph at lines 155--156
+Overfull \hbox (6.93077pt too wide) in paragraph at lines 219--220
  []\OT1/txr/bx/it/12 1.21\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 The AC set-ting o
 n the os-cil-lo-scope sub-
  []
 
 
-Overfull \hbox (5.98352pt too wide) in paragraph at lines 155--156
+Overfull \hbox (5.98352pt too wide) in paragraph at lines 219--220
 \OT1/txr/m/n/12 time in-ter-val. So by de-creas-ing the fre-quency,
  []
 
 
-Overfull \hbox (3.4515pt too wide) in paragraph at lines 155--156
+Overfull \hbox (3.4515pt too wide) in paragraph at lines 219--220
 \OT1/txr/m/n/12 there will be fewer cy-cles in the same amount
  []
 
-Missing character: There is no Ã in font txb!
-Missing character: There is no Å in font txb!
-<figure/thev_setup.png, id=87, 319.9152pt x 231.9867pt>
+[5 <./figure/1_20.png>]
+Missing character: There is no Ã in font txi!
+Missing character: There is no Å in font txi!
+
+<figure/thev_setup.png, id=123, 319.9152pt x 231.9867pt>
 File: figure/thev_setup.png Graphic file (type png)
 
 <use figure/thev_setup.png>
-Package pdftex.def Info: figure/thev_setup.png used on input line 161.
+Package pdftex.def Info: figure/thev_setup.png used on input line 225.
 (pdftex.def)             Requested size: 200.0pt x 145.0338pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (13.4235pt too wide) in paragraph at lines 165--166
+Overfull \hbox (13.4235pt too wide) in paragraph at lines 229--230
 \OT1/txr/m/n/12 9V. By de-com-pos-ing the com-pli-cated Thevenin
  []
 
 
-Overfull \hbox (10.03949pt too wide) in paragraph at lines 165--166
+Overfull \hbox (10.03949pt too wide) in paragraph at lines 229--230
 \OT1/txr/m/n/12 we can sim-ply treat ev-ery-thing in the Thevenin
  []
 
-[3] <figure/thevenin.png, id=105, 398.6895pt x 288.1164pt>
+<figure/thevenin.png, id=125, 398.6895pt x 288.1164pt>
 File: figure/thevenin.png Graphic file (type png)
 
 <use figure/thevenin.png>
-Package pdftex.def Info: figure/thevenin.png used on input line 171.
+Package pdftex.def Info: figure/thevenin.png used on input line 235.
 (pdftex.def)             Requested size: 200.0pt x 144.52823pt.
+ [6 <./figure/ACweird.png> <./figure/thev_setup.png> <./figure/thevenin.png>]
+Overfull \hbox (0.65231pt too wide) in paragraph at lines 246--247
+[]\OT1/txr/m/n/12 b) Pinch-ing the red in-su-la-tion of the min-
+ []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (0.23547pt too wide) in paragraph at lines 247--248
+\OT1/txr/m/n/12 thus pre-vents the in-tru-sion of dif-fer-ent wave-
+ []
 
 
-Package caption Warning: \label without proper \caption on input line 201.
+Overfull \hbox (2.2755pt too wide) in paragraph at lines 247--248
+\OT1/txr/m/n/12 also dis-torted mo-men-tar-ily, caus-ing the wave
+ []
+
+<figure/trace_2_2e.png, id=142, 265.4718pt x 153.2124pt>
+File: figure/trace_2_2e.png Graphic file (type png)
+
+<use figure/trace_2_2e.png>
+Package pdftex.def Info: figure/trace_2_2e.png used on input line 251.
+(pdftex.def)             Requested size: 219.2565pt x 126.5397pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 251--253
+[][]
+ []
+
+
+Package caption Warning: \label without proper \caption on input line 271.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `Z_input' on page 4 undefined on input line 180.
+LaTeX Warning: Reference `Z_input' on page 7 undefined on input line 259.
 
 
-Overfull \hbox (6.78754pt too wide) in paragraph at lines 180--181
+Overfull \hbox (6.78754pt too wide) in paragraph at lines 259--260
  []\OT1/txr/bx/it/12 2.3\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 Here, we treat the
  os-cil-lo-scope as a black
  []
 
 
-Overfull \hbox (15.25949pt too wide) in paragraph at lines 180--181
+Overfull \hbox (15.25949pt too wide) in paragraph at lines 259--260
 \OT1/txr/m/n/12 dif-fer-ent re-sis-tors in the cir-cuit shown in Fig.[][][],
  []
 
 
-Overfull \hbox (5.35951pt too wide) in paragraph at lines 180--181
-\OT1/txr/m/n/12 and mea-sured the in-put volt-age. Us-ing Eq.[]11[],
+Overfull \hbox (5.35951pt too wide) in paragraph at lines 259--260
+\OT1/txr/m/n/12 and mea-sured the in-put volt-age. Us-ing Eq.[]14[],
  []
 
-[4 <./figure/ACweird.png> <./figure/thev_setup.png> <./figure/thevenin.png>]
-<figure/d_Z_input.png, id=128, 663.47874pt x 262.9825pt>
-File: figure/d_Z_input.png Graphic file (type png)
+<figure/Z_input.png, id=147, 356.33125pt x 134.5025pt>
+File: figure/Z_input.png Graphic file (type png)
 
-<use figure/d_Z_input.png>
-Package pdftex.def Info: figure/d_Z_input.png used on input line 200.
-(pdftex.def)             Requested size: 200.0pt x 79.27255pt.
+<use figure/Z_input.png>
+Package pdftex.def Info: figure/Z_input.png used on input line 270.
+(pdftex.def)             Requested size: 219.2565pt x 82.7606pt.
 
-<figure/Z_input_plot.png, id=129, 400.49625pt x 288.07625pt>
+Overfull \hbox (9.0pt too wide) in paragraph at lines 270--272
+[][]
+ []
+
+<figure/Z_input_plot.png, id=148, 400.49625pt x 288.07625pt>
 File: figure/Z_input_plot.png Graphic file (type png)
 
 <use figure/Z_input_plot.png>
-Package pdftex.def Info: figure/Z_input_plot.png used on input line 205.
-(pdftex.def)             Requested size: 200.0pt x 143.86192pt.
+Package pdftex.def Info: figure/Z_input_plot.png used on input line 275.
+(pdftex.def)             Requested size: 219.2565pt x 157.71272pt.
 
-Overfull \hbox (9.93152pt too wide) in paragraph at lines 217--218
-\OT1/txr/m/n/12 pe-ri-ence with equip-ment, in-clud-ing the DMM,
+Overfull \hbox (9.0pt too wide) in paragraph at lines 275--276
+[][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 225.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/2_4_setup.jpg, id=152, 3110.62125pt x 1246.6575pt>
+File: figure/2_4_setup.jpg Graphic file (type jpg)
+
+<use figure/2_4_setup.jpg>
+Package pdftex.def Info: figure/2_4_setup.jpg used on input line 283.
+(pdftex.def)             Requested size: 219.2565pt x 87.86462pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 283--284
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./figure/trace_2_2e.png>]
+
+LaTeX Warning: Reference `2_4_plot' on page 8 undefined on input line 291.
+
+<figure/1-2-4-input-impedance.png, id=171, 398.48875pt x 288.07625pt>
+File: figure/1-2-4-input-impedance.png Graphic file (type png)
+
+<use figure/1-2-4-input-impedance.png>
+Package pdftex.def Info: figure/1-2-4-input-impedance.png used on input line 29
+3.
+(pdftex.def)             Requested size: 219.2565pt x 158.50395pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 293--294
+[][] 
+ []
+
+
+Overfull \hbox (5.70752pt too wide) in paragraph at lines 290--298
+\OT1/txr/m/n/12 ac-cu-rate since it yields the re-sult for the larger
+ []
+
+
+Overfull \hbox (3.33154pt too wide) in paragraph at lines 290--298
+\OT1/txr/m/n/12 impedance (i.e. the mea-sure-ment ap-proaches
+ []
+
+<figure/Z_output_setup.png, id=174, 139.722pt x 82.8696pt>
+File: figure/Z_output_setup.png Graphic file (type png)
+
+<use figure/Z_output_setup.png>
+Package pdftex.def Info: figure/Z_output_setup.png used on input line 301.
+(pdftex.def)             Requested size: 219.2565pt x 130.04355pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 301--302
+[][] 
+ []
+
+
+Overfull \hbox (6.95552pt too wide) in paragraph at lines 299--305
+ []\OT1/txr/bx/it/12 2.5\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 Treat-ing the sig-
+nal gen-er-a-tor as the black
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/Z_output_plot.png, id=175, 406.6392pt x 288.1164pt>
+File: figure/Z_output_plot.png Graphic file (type png)
+
+<use figure/Z_output_plot.png>
+Package pdftex.def Info: figure/Z_output_plot.png used on input line 307.
+(pdftex.def)             Requested size: 219.2565pt x 155.35191pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 307--308
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.2755pt too wide) in paragraph at lines 311--313
+\OT1/txr/m/n/12 is hard to achieve the half-voltage point since
+ []
+
+
+Overfull \hbox (6.41548pt too wide) in paragraph at lines 311--313
+\OT1/txr/m/n/12 man-ual ad-just-ments of the knob tends to over-
+ []
+
+[8 <./figure/Z_input.png> <./figure/Z_input_plot.png> <./figure/2_4_setup.jpg> 
+<./figure/1-2-4-input-impedance.png>]
+<figure/rc_setup.jpg, id=189, 2861.69125pt x 2094.82625pt>
+File: figure/rc_setup.jpg Graphic file (type jpg)
+
+<use figure/rc_setup.jpg>
+Package pdftex.def Info: figure/rc_setup.jpg used on input line 316.
+(pdftex.def)             Requested size: 219.2565pt x 160.49342pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 316--317
+[][] 
+ []
+
+<figure/rc_circuit.png, id=191, 390.4989pt x 285.2256pt>
+File: figure/rc_circuit.png Graphic file (type png)
+
+<use figure/rc_circuit.png>
+Package pdftex.def Info: figure/rc_circuit.png used on input line 322.
+(pdftex.def)             Requested size: 219.2565pt x 160.15175pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 322--323
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (0.70033pt too wide) in paragraph at lines 326--328
+[]\OT1/txr/m/n/12 We mea-sure the phase be-tween in-put and
+ []
+
+[9 <./figure/Z_output_setup.png> <./figure/Z_output_plot.png> <./figure/rc_setu
+p.jpg> <./figure/rc_circuit.png>]
+<figure/phase_plot.png, id=205, 404.51125pt x 286.06876pt>
+File: figure/phase_plot.png Graphic file (type png)
+
+<use figure/phase_plot.png>
+Package pdftex.def Info: figure/phase_plot.png used on input line 337.
+(pdftex.def)             Requested size: 219.2565pt x 155.05974pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 337--338
+[][] 
+ []
+
+
+Overfull \hbox (5.88751pt too wide) in paragraph at lines 335--342
+ []\OT1/txr/bx/it/12 2.9\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 Us-ing the os-cil-
+lo-scope's ``mea-sure-ment"
+ []
+
+
+Overfull \hbox (1.47153pt too wide) in paragraph at lines 349--350
+\OT1/txr/m/n/12 fore the re-sis-tors in the cir-cuit) heats up. Due
+ []
+
+
+Overfull \hbox (1.12354pt too wide) in paragraph at lines 349--350
+\OT1/txr/m/n/12 to the temperature-dependence of re-sis-tance,
+ []
+
+
+Overfull \hbox (1.7948pt too wide) in paragraph at lines 352--355
+\OT1/txr/m/n/12 cor-rect, nom-i-nal 100W power num-ber given,
+ []
+
+<figure/bode.png, id=207, 404.51125pt x 285.065pt>
+File: figure/bode.png Graphic file (type png)
+ <use figure/bode.png>
+Package pdftex.def Info: figure/bode.png used on input line 362.
+(pdftex.def)             Requested size: 219.2565pt x 154.51567pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 362--363
+[][] 
+ []
+
+File: figure/bode.png Graphic file (type png)
+<use figure/bode.png>
+Package pdftex.def Info: figure/bode.png used on input line 368.
+(pdftex.def)             Requested size: 219.2565pt x 154.51567pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 368--369
+[][] 
+ []
+
+<figure/experiment_theory.png, id=210, 404.51125pt x 285.065pt>
+File: figure/experiment_theory.png Graphic file (type png)
+
+<use figure/experiment_theory.png>
+Package pdftex.def Info: figure/experiment_theory.png used on input line 374.
+(pdftex.def)             Requested size: 219.2565pt x 154.51567pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 374--375
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./figure/phase_plot.png> <./figure/bode.png>]
+<figure/2_13_50ohmTerminator.png, id=231, 132.9768pt x 69.6201pt>
+File: figure/2_13_50ohmTerminator.png Graphic file (type png)
+
+<use figure/2_13_50ohmTerminator.png>
+Package pdftex.def Info: figure/2_13_50ohmTerminator.png used on input line 383
+.
+(pdftex.def)             Requested size: 219.2565pt x 114.79807pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 383--384
+[][] 
+ []
+
+<figure/2_13_short1.png, id=232, 131.7723pt x 53.9616pt>
+File: figure/2_13_short1.png Graphic file (type png)
+
+<use figure/2_13_short1.png>
+Package pdftex.def Info: figure/2_13_short1.png used on input line 388.
+(pdftex.def)             Requested size: 219.2565pt x 89.7911pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 388--389
+[][] 
+ []
+
+<figure/10ftlongsetup.jpg, id=233, 3188.91376pt x 1506.62875pt>
+File: figure/10ftlongsetup.jpg Graphic file (type jpg)
+
+<use figure/10ftlongsetup.jpg>
+Package pdftex.def Info: figure/10ftlongsetup.jpg used on input line 393.
+(pdftex.def)             Requested size: 219.2565pt x 103.58966pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 393--394
+[][] 
+ []
+
+<figure/2_13_timelag_setup.png, id=236, 417.56pt x 231.86626pt>
+File: figure/2_13_timelag_setup.png Graphic file (type png)
+
+<use figure/2_13_timelag_setup.png>
+Package pdftex.def Info: figure/2_13_timelag_setup.png used on input line 399.
+(pdftex.def)             Requested size: 219.2565pt x 121.75282pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 399--400
+[][] 
+ []
+
+<figure/2_13_shorted.png, id=239, 476.78125pt x 190.7125pt>
+File: figure/2_13_shorted.png Graphic file (type png)
+
+<use figure/2_13_shorted.png>
+Package pdftex.def Info: figure/2_13_shorted.png used on input line 405.
+(pdftex.def)             Requested size: 219.2565pt x 87.7026pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 405--406
+[][] 
+ []
+
+<figure/2_13_50ohmR.png, id=240, 477.785pt x 191.71625pt>
+File: figure/2_13_50ohmR.png Graphic file (type png)
+
+<use figure/2_13_50ohmR.png>
+Package pdftex.def Info: figure/2_13_50ohmR.png used on input line 410.
+(pdftex.def)             Requested size: 219.2565pt x 87.97699pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 410--411
+[][] 
+ []
+
+
+Overfull \hbox (1.78033pt too wide) in paragraph at lines 381--414
+[]\OT1/txr/m/n/12 Then, we shorted the in-put sig-nal by con-
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./figure/experiment_theory.png> <./figure/2_13_50ohmTerminator.png> <./fig
+ure/2_13_short1.png> <./figure/10ftlongsetup.jpg>]
+Overfull \hbox (3.52348pt too wide) in paragraph at lines 417--418
+ []\OT1/txr/bx/it/12 2.14\OT1/txr/m/it/12 .[] \OT1/txr/m/n/12 If we as-sume tha
+t sig-nals travel at 2/3c,
+ []
+
+
+Overfull \hbox (8.02728pt too wide) in paragraph at lines 417--418
+\OT1/txr/m/n/12 com-puted by $\OML/txmi/m/it/12 t \OT1/txr/m/n/12 = (30\OML/txm
+i/m/it/12 :\OT1/txr/m/n/12 5\OML/txmi/m/it/12 m\OT1/txr/m/n/12 )\OML/txmi/m/it/
+12 =\OT1/txr/m/n/12 (2\OML/txmi/m/it/12 =\OT1/txr/m/n/12 3(3 \OMS/txsy/m/n/12 ^
+^B \OT1/txr/m/n/12 10[]\OML/txmi/m/it/12 m=s\OT1/txr/m/n/12 )) =
+ []
+
+
+Overfull \hbox (4.21951pt too wide) in paragraph at lines 419--421
+\OT1/txr/m/n/12 os-cil-lo-scope's screen. When light travel from
+ []
+
+
+Overfull \hbox (0.18748pt too wide) in paragraph at lines 419--421
+\OT1/txr/m/n/12 mis-sion and the wave is com-pletely re-flected
+ []
+
+
+Overfull \hbox (1.3995pt too wide) in paragraph at lines 422--423
+\OT1/txr/m/n/12 choos-ing impedances such that the first stage
+ []
+
+<figure/filter.jpg, id=254, 3088.53876pt x 1617.04124pt>
+File: figure/filter.jpg Graphic file (type jpg)
+
+<use figure/filter.jpg>
+Package pdftex.def Info: figure/filter.jpg used on input line 428.
+(pdftex.def)             Requested size: 219.2565pt x 114.78358pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 428--429
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/schema.jpg, id=256, 3158.80125pt x 1709.38625pt>
+File: figure/schema.jpg Graphic file (type jpg)
+
+<use figure/schema.jpg>
+Package pdftex.def Info: figure/schema.jpg used on input line 439.
+(pdftex.def)             Requested size: 219.2565pt x 118.62593pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 439--440
+[][] 
+ []
+
+<figure/filter_plot.png, id=258, 426.59375pt x 283.0575pt>
+File: figure/filter_plot.png Graphic file (type png)
+
+<use figure/filter_plot.png>
+Package pdftex.def Info: figure/filter_plot.png used on input line 445.
+(pdftex.def)             Requested size: 219.2565pt x 145.4847pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 445--446
+[][] 
+ []
+
+[12 <./figure/2_13_timelag_setup.png> <./figure/2_13_shorted.png> <./figure/2_1
+3_50ohmR.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (13.03877pt too wide) in paragraph at lines 450--451
+\OT1/txr/m/n/12 us-ing the equip-ment in BSC lab through hands-
+ []
+
+
+Overfull \hbox (3.22351pt too wide) in paragraph at lines 450--451
+\OT1/txr/m/n/12 ple-men-ta-tions, and ap-plied it to con-struct lin-
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 458.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 225.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
- [5 <./figure/d_Z_input.png> <./figure/Z_input_plot.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 458.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 467.
+ [13 <./figure/filter.jpg> <./figure/schema.jpg> <./figure/filter_plot.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 467.
  (./report_4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 467.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 467.
 Package rerunfilecheck Info: File `report_4.out' has not changed.
-(rerunfilecheck)             Checksum: 89C7427706A4E1C7B774A244D09D9063;407.
+(rerunfilecheck)             Checksum: 42BBEB238EF0CD0D9F87690EF7C7B6B2;172.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 467.
  ) 
 Here is how much of TeX's memory you used:
- 8811 strings out of 493117
- 128468 string characters out of 6135433
- 228286 words of memory out of 5000000
- 12061 multiletter control sequences out of 15000+600000
+ 8996 strings out of 493117
+ 132006 string characters out of 6135433
+ 230767 words of memory out of 5000000
+ 12169 multiletter control sequences out of 15000+600000
  44194 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,40p,647b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
+ 42i,16n,40p,1053b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
 , replaced by a fixed one
@@ -867,10 +1348,10 @@ mf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2014/texmf-dist
 type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_4.pdf (5 pages, 2100556 bytes).
+Output written on report_4.pdf (13 pages, 5474435 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
