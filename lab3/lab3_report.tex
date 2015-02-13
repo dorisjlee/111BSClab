@@ -45,7 +45,6 @@ The curver tracer is
 \par We rearrange the diode equation as shown in Eq. \ref{diode_eq} and solve for n as in Eq.\ref{n}
 \begin{equation}
 i(V) = i_{sat}\Bigg[exp(\frac{eV}{nkT})-1\Bigg]
-\section*{3.6}
 \label{diode_eq}
 \end{equation}
 \begin{equation}
@@ -58,6 +57,39 @@ n &= \frac{eV}{kT}\frac{1}{ln[\frac{i(V)}{i_{sat}}+1]} \\&= \frac{(1.60\times10^
 
 
 we do indeed find that the constant n fall within the reasonable range of 1~ 2  depending on the particular diode.
+\section*{3.6}
+We setup the experiment by connecting the 1N4448 diode in series with a 1M$\Omega$ resistor and a 12V voltage supply. In order to find the current thoruhg the diode, we measure the value of the voltage drop across the resistor as 327 mV. Using the diode equation (Eq.\ref{diode_eq}), we compute the current through the diode, i(V=327mV), as: 
+\begin{equation*}
+(4.00\times10^{-8}A)e^{\frac{(1.6\times10^{-19}C)(327\times10^{-3}V)}{(1.4315)(1.38\times10^{-23}m^2kgs^{-2}K^{-1})(298K)}}
+\end{equation*}
+and obtain current value of 0.2896 mA.
+\section*{3.7}\label{3_7_q}
+We built a half wave rectifier using the setup shown in Fig.\ref{3_7_setup} and set the DC offset as zero. 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_7_setup}
+\caption{ setup}
+\label{3_7_setup}
+\end{figure}
+By measuring the input and output signal waveforms, as shown in Fig.\ref{3_7_trace}, we find that the peak-to-peak voltage of the rectified signal is attenuated by a factor of about 8. In addition, we can see that the half-wave rectifier passes half of the signal while blocking the other half, however, there are still some rippling in the rectified signal that requires filtering.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_7}
+\caption{Scope trace of the AC signal (in cyan; Channel 2) and the rectified output signal (in blue; Channel 1)}
+\label{3_7_trace}
+\end{figure}
+\section*{3.8}
+To alleviate the rippling effect observed in Fig.\ref{3_7}, we add a 1$\mu$F capacitor in parallel to the load resistor in the rectifier shown in Fig.\ref{3_7_setup}.
+
+When we double the input frequency, the amplitude of the ripple -----. Doubling the capacitance results in ------. By doubling the load resistor, -------.
+\section*{3.13}
+When we flipped the polarity of the power supply, the forward voltage drop is close to zero because no current should be flowing through in the reverse direction of a diode. When we connected the LED to different values of resistance, we find that as we increase the resistance, the forward voltage drop increases and the LED brightness dims. When the resistance too large, the voltage drop across the diode is not enough to power the LED since it is below the LED's cutoff voltage, therefore the LED did not light up for the $30k\Omega$ and 300k$\Omega$ trial.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_13_LED}
+\caption{The LED's brightness decreases as we increase the resistance, corresponding to a larger voltage drop across the resistance.}
+\label{3_13_LED}
+\end{figure}
 \section{Conclusion}
 \section*{Acknowledgments}
 \begin{footnotesize}
