@@ -31,7 +31,19 @@ When we submerged the diode in liquid nitrogen ---
 Squeezing the diode with our finger causes slight temperature increase in the diode. We can clearly see the increasing trend of ----- as the we change the temperature of the diode.
 \par Diodes do not follow the linear Ohmic behaviour relating voltage and current, but these results still correspond to the semiconductor physics at play. As we decrease the temperature, the conduction electrons has less kinetic energy and therefore slower thermal velocities. Therefore, it requires more work to transport them through the pn junction, since voltage is work per change, the results in a higher voltage drop measured. 
 \section*{3.3}
-We connect the offset adder to the DMM to measure the output voltage and variaed it from -8 to 8 V. Turning the knob clockwise increases the voltage and vice versa for counterclosewise. We loaded up different resistors 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_3_setup}
+\caption{Setup of offset adder to vary voltage from -8V to 8V.}
+\label{3_3}
+\end{figure}
+We connect the offset adder to the DMM to measure the output voltage and varied it from -8 to 8 V. Turning the knob clockwise increases the voltage and vice versa for counterclockwise. We loaded up different resistors, since the output current is kept below 24 mA, the circuit is relatively stiff as shown in the slope of in \ref{3_3}. 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_3}
+\caption{By plotting the VI curve, since $Z=\frac{\partial V}{\partial I}$, the output  impedance relatively low, at around $-1.822\times10^{-7} \Omega$.}
+\label{3_3}
+\end{figure}
 \section*{3.4}
 \begin{figure}[h!]
 \center
@@ -79,9 +91,10 @@ By measuring the input and output signal waveforms, as shown in Fig.\ref{3_7_tra
 \label{3_7_trace}
 \end{figure}
 \section*{3.8}
-To alleviate the rippling effect observed in Fig.\ref{3_7}, we add a 1$\mu$F capacitor in parallel to the load resistor in the rectifier shown in Fig.\ref{3_7_setup}.
-
-When we double the input frequency, the amplitude of the ripple -----. Doubling the capacitance results in ------. By doubling the load resistor, -------.
+To alleviate the rippling effect observed in Fig.\ref{3_7}, we add a 1$\mu$F capacitor in parallel to the load resistor in the rectifier shown in Fig.\ref{3_7_setup}. The peak-to-peak voltage of the original input signal  is 10V, without the rippling the $V_{pp}$ is equal to the amplitude.
+\par a) When we double the input frequency, the amplitude of the ripple  decreased to 1.25V. The measured $V_{pp}$ is 1.32V. The difference between these measurements tells us that the ripple is around 0.08V.  
+\par  b) Doubling the capacitance also results in a ripple voltage of around 0.08V.
+c) By doubling the load resistor, the ripple  voltage is approximately 0.08.
 \section*{3.13}
 When we flipped the polarity of the power supply, the forward voltage drop is close to zero because no current should be flowing through in the reverse direction of a diode. When we connected the LED to different values of resistance, we find that as we increase the resistance, the forward voltage drop increases and the LED brightness dims. When the resistance too large, the voltage drop across the diode is not enough to power the LED since it is below the LED's cutoff voltage, therefore the LED did not light up for the $30k\Omega$ and 300k$\Omega$ trial.
 \begin{figure}[h!]
