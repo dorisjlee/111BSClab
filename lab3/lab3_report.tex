@@ -35,7 +35,7 @@ Squeezing the diode with our finger causes slight temperature increase in the di
 \center
 \includegraphics[width=0.5\textwidth]{figure/3_3_setup}
 \caption{Setup of offset adder to vary voltage from -8V to 8V.}
-\label{3_3}
+\label{3_3_setup}
 \end{figure}
 We connect the offset adder to the DMM to measure the output voltage and varied it from -8 to 8 V. Turning the knob clockwise increases the voltage and vice versa for counterclockwise. We loaded up different resistors, since the output current is kept below 24 mA, the circuit is relatively stiff as shown in the slope of in \ref{3_3}. 
 \begin{figure}[h!]
@@ -45,6 +45,7 @@ We connect the offset adder to the DMM to measure the output voltage and varied 
 \label{3_3}
 \end{figure}
 \section*{3.4}
+We setup the circuit as shown in Fig.\ref{3_4_diag}, using the offset adder, we vary the voltage and measure the current using ammeter in series and the voltage across the diode. 
 \begin{figure}[h!]
 \center
 \includegraphics[width=0.5\textwidth]{figure/3_4_diag}
@@ -52,8 +53,21 @@ We connect the offset adder to the DMM to measure the output voltage and varied 
 \label{3_4_diag}
 \end{figure}
 \section*{3.5}
-The curver tracer is  
 
+The curver tracer is  
+Using the Curve Tracer, 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_5_ln2}
+\caption{Characteristic curve for diode in liquid nitrogen. (T =170K; $i_{sat}=$, voltage coefficient = )}
+\label{3_5_ln2}
+\end{figure}
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_5_norm}
+\caption{Characteristic curve for diode at room temperature. (T =298K; $i_{sat}=$, voltage coefficient = ) }
+\label{3_5_norm}
+\end{figure}
 \par We rearrange the diode equation as shown in Eq. \ref{diode_eq} and solve for n as in Eq.\ref{n}
 \begin{equation}
 i(V) = i_{sat}\Bigg[exp(\frac{eV}{nkT})-1\Bigg]
@@ -65,9 +79,6 @@ n &= \frac{eV}{kT}\frac{1}{ln[\frac{i(V)}{i_{sat}}+1]} \\&= \frac{(1.60\times10^
 \label{n}
 \end{split}
 \end{equation}
-
-
-
 we do indeed find that the constant n fall within the reasonable range of 1~ 2  depending on the particular diode.
 \section*{3.6}
 We setup the experiment by connecting the 1N4448 diode in series with a 1M$\Omega$ resistor and a 12V voltage supply. In order to find the current thoruhg the diode, we measure the value of the voltage drop across the resistor as 327 mV. Using the diode equation (Eq.\ref{diode_eq}), we compute the current through the diode, i(V=327mV), as: 
@@ -112,12 +123,10 @@ The author would like to acknowledge support from the GSI in this lab and with t
  \begin{footnotesize}
  \begin{itemize}
  \item Horowitz, Paul, and Winfield Hill. \textit{The Art of Electronics}. Cambridge: Cambridge UP, 1989. Print.
- \item ``Lab 1 - Introductory Experiments and Linear Circuits I." \textit{Donald A. Glaser Advanced Lab.} Regents of the University of California, n.d. Web. 01 Feb. 2015.
-  \item ``Writing Lab Reports." \textit{Donald A. Glaser Advanced Lab.} Regents of the University of California, n.d. Web. 01 Feb. 2015.
-% \item Press, William H., and William T. Vetterling. \textit{Numerical Recipes in C: The Art of Scientific Computing}. Cambridge University Press, 1992.  
-\end{itemize}
-% \bibliography{references}
-%\bibliographystyle{elsarticle-harv}
+ 
+ \item ``Lab 3 - Diodes." \textit{Donald A. Glaser Advanced Lab.} Regents of the University of California, n.d. Web. 01 Feb. 2015.
+  \item ``Zener Diode as Voltage Regulator Tutorial." Basic Electronics Tutorials. N.p., 13 Aug. 2013. Web. 14 Feb. 2015.
+\end{itemize} 
   \end{footnotesize}
 
 \end{document}
