@@ -15,20 +15,19 @@
 \begin{document}
 \begin{frontmatter}
 \title{Semiconductor Diodes}
-\author{\today \quad \\Jung Lin (Doris) Lee [Lab Partner: Leah Tom]\\Prof. William Holzapfel, GSI Thomas Darlington, Thomas Mittiga, John Groh,  \\Victoria Xu, Jonathan Ma, Francisco Monsalve, Xiaofei Zhou}
-	 
-\end{frontmatter} 
-
+\author{\today \quad \\Jung Lin (Doris) Lee [Lab Partner: Leah Tom]\\Prof. William Holzapfel, GSI Thomas Darlington, Thomas Mittiga, John Groh,  \\Victoria Xu, Jonathan Ma, Francisco Monsalve, Xiaofei Zhou\vspace{-30pt}}	 
+\end{frontmatter}
 \section*{Introduction\label{intro}}
+Diodes are isolated pn junctions widely used in everyday electronics such a the common household AC to DC rectifier.
+%common ---  electronics  widely used in ----- . Their unidirectional behavior is used for rectification They are used to  convert household AC to DC 
+In this lab, we investigated the characteristics of semiconductor diodes. We explored the temperature-dependence of the diode using liquid nitrogen. Using CurveTracer and manually measuring the diode's voltage drop and current , we demonstrate the non-Ohmic VI relation of diodes. We build a diode rectifier and  conduct graphical load line analysis to determine the operating point of the circuit. Finally, we explore different types of diodes, such as light-emitting diode (LED) and the zener diode, their characteristics and applications. 
 \section{Diodes}
 \section*{3.1}
 We connected the 1N4448 diode to the DMM in one direction and measured a resistance of 0.61572$k\Omega$ $\pm$ 0.1138864 $\Omega$. When we reversed direction of the diode and connected the positive grabber to the black band of the diode (Cathode) and the grounding grabber to the red end of the diode(anode), the DMM measured resistance overload. 
 \par This shows that diode conducts only unidirectionally, since if there is a non-overloading resistance reading, it means that the tiny test current passed by the DMM actually pass through to the other end of the terminal, resulting in a forward voltage drop across the diode.
 \footnote{The minigabbers and BNC cable were connected to the INPUT pairs on the right which had a diode symbol below it.}
 \section*{3.2}
-In the conducting direction, the plastic-stick mounted 1NN4448 diode has a forward voltage drop of 4.419 mV$\pm$ 4.53$\mu$V.  When we squeezed the diode with our fingers, the measured forward voltage drop is 8.215.
-When we submerged the diode in liquid nitrogen ---
-Squeezing the diode with our finger causes slight temperature increase in the diode. We can clearly see the increasing trend of ----- as the we change the temperature of the diode.
+In the conducting direction, the plastic-stick mounted 1NN4448 diode has a forward voltage drop of 4.419 mV$\pm$ 4.53$\mu$V.  When we squeezed the diode with our fingers, the measured forward voltage drop is 8.215mV$\pm$ 4.53 $\mu$V. When we submerged the diode in liquid nitrogen, the voltage drop decreased to 2.460mV $\pm$ $4.29\mu V$. The squeezing of the diode with our finger causes slight temperature increase in the diode, which resulted in a lower voltage drop.  We can also see an increasing trend of resistance as we change the temperature of the diode.
 \par Diodes do not follow the linear Ohmic behaviour relating voltage and current, but these results still correspond to the semiconductor physics at play. As we decrease the temperature, the conduction electrons has less kinetic energy and therefore slower thermal velocities. Therefore, it requires more work to transport them through the pn junction, since voltage is work per change, the results in a higher voltage drop measured. 
 \section*{3.3}
 We connect the offset adder to the DMM to measure the output voltage and varied it from -8 to 8 V. Turning the knob clockwise increases the voltage and vice versa for counterclockwise. We loaded up different resistors, since the output current is kept below 24 mA, the circuit is relatively stiff as shown in the slope of in \ref{3_3}. 
@@ -108,22 +107,66 @@ By measuring the input and output signal waveforms, as shown in Fig.\ref{3_7_tra
 \end{figure}
 \section*{3.8}
 To alleviate the rippling effect observed in Fig.\ref{3_7}, we add a 1$\mu$F capacitor in parallel to the load resistor in the rectifier shown in Fig.\ref{3_7_setup}. The peak-to-peak voltage of the original input signal  is 10V, without the rippling the $V_{pp}$ is equal to the amplitude.
-\par a) When we double the input frequency, the amplitude of the ripple  decreased to 1.25V. The measured $V_{pp}$ is 1.32V. The difference between these measurements tells us that the ripple is around 0.08V.  
-\par  b) Doubling the capacitance also results in a ripple voltage of around 0.08V.
-\par c) By doubling the load resistor, the ripple  voltage is approximately 0.08.
+The ripple amplitude decreases as shown in Fig. \ref{ripple}, because we are changing the time constant in the expression $e^{-t/\tau}$. Increase in resistance and capacitance increases the $\tau$, since $\tau$ = RC, causing the signal to flatten and reducing the ripple amplitude. This is proven from the changes to the circuit: 
+\par a) When we double the input frequency, %the amplitude of the ripple  decreased to 1.25V. %The measured $V_{pp}$ is 1.32V. 
+the difference between the $V_{pp}$ and amplitude tells us that the ripple is around 150mV .  
+\par  b) Doubling the capacitance also results in a ripple voltage of around 150mV.
+\par c) By doubling the load resistor, the ripple voltage is approximately 150mV.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/TEK00015}
+\includegraphics[width=0.5\textwidth]{figure/TEK00017}
+\caption{Top: The original waveform. Bottom: The waveform after the rectification, note that the ripple voltage has decreased after the insertion of the load resistor and capacitor.}
+\label{ripple}
+\end{figure}
+
 \section*{3.9}
 \begin{figure}[h!]
 \center
 \includegraphics[width=0.5\textwidth]{figure/3_3_setup}
 \caption{Diode analysis }
-\label{3_3_setup}
+\label{3_9_setup}
 \end{figure}
 \section*{3.10}
-
+For the V$_{pp}$ 2V signal, the offset adder simply adds the input signal with the offset. However, when we vary the amplitude of the input signal to 5V and 10V , we find that the signal have flattened peak. This makes sense because the offset adder limits the maximum V$_{pp}$ of the signal to 2V, therefore, anything signal above 2V gets cutoff and any signal below it is preserved. 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_10_12}
+\includegraphics[width=0.5\textwidth]{figure/3_10_13}
+\includegraphics[width=0.5\textwidth]{figure/3_10_14}
+\caption{Cropped scope trace showing the original and output signal resulting from varying the amplitude of the signal. (Top figure: 2V ; Middle: 5V; Bottom: 10V). The channel 1 shows the original signal connected directly to the signal generator and the channel 3 shows the output resulting from the offset adder.The y axes is 2.00V per div; the x axes is 4.00ms per div.}
+\label{3_10_12}
+\end{figure}
+%This is shown to be true when we vary the offset adder 
+\par A negative offset is applied to a 2 V$_{pp}$ signal, as shown in the upper trace in Fig. \ref{plus_neg}, the signals cuts off and flattens at -1V.  Vice versa for the positive offset, the signal is cuttoff at 1V. In addition to adding an internal offset to the signal, the offset adder also rectifies the signal input and flattens the portion of the signal that exceeds the maximum amplitude cutoff. 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_10_17}
+\includegraphics[width=0.5\textwidth]{figure/3_10_16}
+\caption{Cropped scope trace showing the original (Ch1) and output (Ch3) signal resulting from varying the amplitude of the signal. (Top figure: Negative Offset ; Middle: Bottom: Positive offset). The y axes is 2.00V per div; the x axes is 4.00ms per div.}
+\label{plus_neg}
+\end{figure}
+The offset adder adds a constant DC component to the input signal. (i.e. it raises the mean of the signal) However, it does not change the amplitude of the signal.
 %For 3.10, Pictures 12, 13, 14 (in Dropbox) correspond to the effect of varying amplitude. These correspond to amplitudes of 2V, 5V and 10V respectively. Pictures 17 and 15 to a negative offset and at 2V peak-to-peak. Picture 16 to a positive offset at peak-to-peak amplitude of 2V as well. The offset adder basically cuts off your signal beyond a certain amplitude and offset. 
-The offset adder adds a constant DC component to the input signal. (i.e. it raises the mean of the signal) However, it does not change the amplitude of the signal. 
+ 
 \section*{3.11}
+We reconnected the 10k$\Omega$ resistor and diode to the offset adder as shown in  Fig.\ref{3_3}. As shown in the bottom scope trace of Fig. \ref{3_11}, there is equal amplitude of the signal above and below the x axis. The signal does not get rectified like it does in Fig.\ref{3_7_trace} in 3.7.  This makes sense because the offset adder consist of a capacitor inside its circuit. We see an AC signal because the offset adder is a non-zero offset that causes the capacitor to get charged and discharged on each cycle as it alternates. Since the reverse signal is very small ($\approx$ 0.1V),  -----??
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/TEK00022}
+\includegraphics[width=0.5\textwidth]{figure/TEK00024}
+\caption{Top: Channel 1 shows the original signal from the signal generator and Channel 3 shows the signal output after passing through the offset adder. Bottom: The scope trace shows the signal behavior after connected to the external Fig.\ref{3_3} circuit.}
+\label{3_11}
+\end{figure}
 
+\section*{3.12}
+As we vary the DC offset, we record the AC component of the output signal, as plotted in Fig.\ref{3_12}. We find that the amplitude of the AC component of the output signal appears to decrease exponentially. When the DC offset is around 0.45V, the amplitude of the signal decays to half of its original amplitude at very low DC offset. 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_12_fig}
+\caption{Exponential decay of AC component of signal as the DC offset is increased.}
+\label{3_12}
+\end{figure}
 
 \section*{3.13}
 When we flipped the polarity of the power supply, the forward voltage drop is close to zero because no current should be flowing through in the reverse direction of a diode. When we connected the LED to different values of resistance, we find that as we increase the resistance, the forward voltage drop increases and the LED brightness dims. When the resistance too large, the voltage drop across the diode is not enough to power the LED since it is below the LED's cutoff voltage, therefore the LED did not light up for the $30k\Omega$ and 300k$\Omega$ trial.
@@ -133,17 +176,39 @@ When we flipped the polarity of the power supply, the forward voltage drop is cl
 \caption{The LED's brightness decreases as we increase the resistance, corresponding to a larger voltage drop across the resistance.}
 \label{3_13_LED}
 \end{figure}
-
 \section*{3.14}
 We used the Curve Tracer to obtain the Fig. \ref{3_14_LED} characteristic curve of the blue LED used in the Problem 3.13. 
 \begin{figure}[h!]
 \center
 \includegraphics[width=0.5\textwidth]{figure/3_14_LED}
-\caption{Characteristic curve of the light-emitting diode (LED). By selecting the Ohmic region of the characteristic curve, the fitting analysis done by Curve Tracer yielded an $i_{sat}$ value of ----- and voltage coefficient of -----. }
+\caption{Characteristic curve of the light-emitting diode (LED). By selecting the Ohmic region of the characteristic curve, the fitting analysis done by Curve Tracer yielded an $i_{sat}$ value of 1.13$\times10^{-9}$A and voltage coefficient of 22.76V.}
 \label{3_14_LED}
 \end{figure}
+\section*{3.15}
+The charge stored in a capacitor discharged across a resistor in a RC circuit is described by Eq.\ref{rc}: 
+\begin{equation}
+Q = Q_0 e^{-t/RC}
+\label{rc}
+\end{equation}
+When the diode is in reverse bias, the alternating current is stopped from flowing in the opposite direction by the diode, and the capacitor discharges into the RC circuit formed with the resistor. Since the capacitor discharges over half a cycle, we are interested in the voltage across the capacitor at that time:
+%\begin{align*}
+%V(t=\frac{1}{2f}) = \frac{Q_0e^{-1/(2fRC)}}{C} 
+%\\
+%\end{align*}
+\begin{equation}
+\begin{split}
+V\Big(t=\frac{1}{2f}\Big) &= \frac{Q_0e^{-1/(2fRC)}}{C}  \\&= V_0 e^{-1(2fRC)}
+\end{split}
+\end{equation} The ripple voltage is the difference between this voltage and $V_0$: 
+\begin{equation}
+V_{ripple} = V_0(1-e^{-1/(2fRC)})
+\end{equation}
+For the nominal values in 3.8, C=1$\mu$F and R=47k$\Omega$, $V_0$=5V:
+$$V_{ripple} = 5V(1-e^{-1/(2(200Hz)(47k\Omega)(1\mu F))})=259mV$$
+This is close to the amplitude of the ripple shown in the original waveform in Fig.\ref{ripple}. \footnote{Estimated as 6/10 of a division, each division is 500mV.}
+As we doubled the f,R,or C, in 3.8, the new ripple voltage is 131mV, approximately equal to the corresponding estimate of the ripple voltage (150mV) for the lower figure of Fig.\ref{ripple}.
 \section*{3.18}
-We designed the zener diode voltage regulator shown in Fig.\ref{3_18_schematic}, as a voltage divider with one resistor and the 1N5234 zener diode. We compute the resistance given that the maximum current can not exceed 15mA:
+We designed the zener diode voltage regulator shown in Fig. \ref{3_18_schematic}, as a voltage divider with one resistor and the 1N5234 zener diode. We compute the resistance given that the maximum current can not exceed 15mA:
 \begin{equation}
 R_s = \frac{V_{in}-V_{out}}{I_{max}}=\frac{12-6.2 V}{15mA} =386.67\Omega
 \end{equation}
@@ -155,30 +220,27 @@ We construct the necessary $R_s$ by putting a 80,300, and 4$\Omega$ resistor in 
 \label{3_18_schematic}
 \end{figure}
 If we want a less than 5\% decrease in output voltage, then the minimum voltage that satisfies this condition is 5.89V. So the smallest load resistor that will not significantly decrease the circuit output voltage is around 189$\Omega$. 
-
 \begin{figure}[h!]
 \center
 \includegraphics[width=0.5\textwidth]{figure/3_18_curve}
 \caption{Characteristic curve of the 1N5234 zener diode. }
 \label{3_18_curve}
 \end{figure}
-\section{Conclusion}
-demonstrates non linearity of diodes
-using methods such as graphical load line analysis and ---- to ---- 
-non-Ohmic 
-Curve Tracer
-we explore different kinds of diodes such as 
-LED
-Zener diode
+\section*{3.19}
+\section*{Conclusion}
+In this lab, we investigated the characteristics of semiconductor diodes . We explored the temperature-dependence of the diode using liquid nitrogen. Using CurveTracer and manually measuring the diode's voltage drop and current , we demonstrate the nonlinear VI relation of diodes. We further examine how a circuit behavior is altered with the addition of a diode and how their one-directional nature can be useful for various applications. % 
+%using methods such as graphical load line analysis and ---- to ---- 
+%non-Ohmic 
+We explore circuits that includes different types of diodes, such as light-emitting diode and zener diode, to investigate their characteristics and applications. 
+%Diodes are useful --- their one directional characteristic
 \section*{Acknowledgments}
 \begin{footnotesize}
-The author would like to acknowledge support from the GSI in this lab and with the handling of liquid nitrogen. I would also like to thank my partner, Leah Tom, for helpful discussion and collaboration that helped this work. We also appreciate Sissi Wang for providing us with guidance on question 3.2.
+The author would like to acknowledge support from the GSI in this lab and with the handling of liquid nitrogen. I would also like to thank my partner, Leah Tom, for helpful discussion and collaboration that helped this work. We also appreciate Sissi Wang for providing us with guidance on question 3.5, 3.8, and 3.9.
 \end{footnotesize}
   \section*{References}
  \begin{footnotesize}
  \begin{itemize}
  \item Horowitz, Paul, and Winfield Hill. \textit{The Art of Electronics}. Cambridge: Cambridge UP, 1989. Print.
- 
  \item ``Lab 3 - Diodes." \textit{Donald A. Glaser Advanced Lab.} Regents of the University of California, n.d. Web. 01 Feb. 2015.
   \item ``Zener Diode as Voltage Regulator Tutorial." Basic Electronics Tutorials. N.p., 13 Aug. 2013. Web. 14 Feb. 2015.
 \end{itemize} 

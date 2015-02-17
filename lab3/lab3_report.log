@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 FEB 2015 22:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  17 FEB 2015 07:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,228 +575,366 @@ Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+txmia on input line 20.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 19.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 20.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 19.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 20.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 19.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 20.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 19.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Overfull \hbox (14.71951pt too wide) in paragraph at lines 26--28
+Overfull \hbox (12.4635pt too wide) in paragraph at lines 21--24
+\OT1/txr/m/n/12 lab, we in-ves-ti-gated the char-ac-ter-is-tics of semi-
+ []
+
+
+Overfull \hbox (18.13953pt too wide) in paragraph at lines 21--24
+\OT1/txr/m/n/12 con-duc-tor diodes. We ex-plored the temperature-
+ []
+
+
+Overfull \hbox (14.71951pt too wide) in paragraph at lines 27--29
 \OT1/txr/m/n/12 di-rec-tion-ally, since if there is a non-overloading
  []
 
 
-Overfull \hbox (1.2675pt too wide) in paragraph at lines 29--32
+Overfull \hbox (1.2675pt too wide) in paragraph at lines 30--31
 \OT1/txr/m/n/12 stick mounted 1NN4448 diode has a for-ward
  []
 
 
-Overfull \hbox (12.21152pt too wide) in paragraph at lines 29--32
-\OT1/txr/m/n/12 mea-sured for-ward volt-age drop is 8.215. When
+Overfull \hbox (2.70749pt too wide) in paragraph at lines 30--31
+\OT1/txr/m/n/12 mea-sured for-ward volt-age drop is 8.215mV$\OMS/txsy/m/n/12 ^^
+F$
  []
 
 
-Overfull \hbox (5.67151pt too wide) in paragraph at lines 29--32
-\OT1/txr/m/n/12 --- Squeez-ing the diode with our fin-ger causes
- []
-
-
-Overfull \hbox (6.90753pt too wide) in paragraph at lines 32--33
+Overfull \hbox (6.90753pt too wide) in paragraph at lines 31--32
 \OT1/txr/m/n/12 tem-per-a-ture, the con-duc-tion elec-trons has less
  []
 
-<figure/3_3.png, id=14, 398.6895pt x 288.1164pt>
+<figure/3_3.png, id=10, 398.6895pt x 288.1164pt>
 File: figure/3_3.png Graphic file (type png)
  <use figure/3_3.png>
-Package pdftex.def Info: figure/3_3.png used on input line 37.
+Package pdftex.def Info: figure/3_3.png used on input line 36.
 (pdftex.def)             Requested size: 219.2565pt x 158.44691pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 37--38
+Overfull \hbox (9.0pt too wide) in paragraph at lines 36--37
  [] 
  []
 
 
-Overfull \hbox (3.21152pt too wide) in paragraph at lines 34--41
+Overfull \hbox (3.21152pt too wide) in paragraph at lines 33--40
 \OT1/txr/m/n/12 in-creases the volt-age and vice versa for coun-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figure/3_4_diag.png, id=16, 216.05719pt x 52.69687pt>
-File: figure/3_4_diag.png Graphic file (type png)
-
-<use figure/3_4_diag.png>
-Package pdftex.def Info: figure/3_4_diag.png used on input line 44.
-(pdftex.def)             Requested size: 131.55524pt x 32.08794pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figure/3_4_no_log.png, id=20, 410.53375pt x 285.065pt>
-File: figure/3_4_no_log.png Graphic file (type png)
-
-<use figure/3_4_no_log.png>
-Package pdftex.def Info: figure/3_4_no_log.png used on input line 51.
-(pdftex.def)             Requested size: 219.2565pt x 152.2451pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 51--52
- [] 
- []
-
-<figure/3_4_log.png, id=21, 411.5375pt x 288.07625pt>
-File: figure/3_4_log.png Graphic file (type png)
- <use figure/3_4_log.png>
-Package pdftex.def Info: figure/3_4_log.png used on input line 57.
-(pdftex.def)             Requested size: 219.2565pt x 153.47969pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 57--58
- [] 
  []
 
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+<figure/3_4_diag.png, id=27, 216.05719pt x 52.69687pt>
+File: figure/3_4_diag.png Graphic file (type png)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use figure/3_4_diag.png>
+Package pdftex.def Info: figure/3_4_diag.png used on input line 43.
+(pdftex.def)             Requested size: 131.55524pt x 32.08794pt.
 
-<figure/3_5_norm.png, id=42, 400.49625pt x 285.065pt>
-File: figure/3_5_norm.png Graphic file (type png)
+<figure/3_4_no_log.png, id=31, 410.53375pt x 285.065pt>
+File: figure/3_4_no_log.png Graphic file (type png)
 
-<use figure/3_5_norm.png>
-Package pdftex.def Info: figure/3_5_norm.png used on input line 65.
-(pdftex.def)             Requested size: 219.2565pt x 156.06418pt.
+<use figure/3_4_no_log.png>
+Package pdftex.def Info: figure/3_4_no_log.png used on input line 50.
+(pdftex.def)             Requested size: 219.2565pt x 152.2451pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 65--66
+Overfull \hbox (9.0pt too wide) in paragraph at lines 50--51
+ [] 
+ []
+
+<figure/3_4_log.png, id=32, 411.5375pt x 288.07625pt>
+File: figure/3_4_log.png Graphic file (type png)
+ <use figure/3_4_log.png>
+Package pdftex.def Info: figure/3_4_log.png used on input line 56.
+(pdftex.def)             Requested size: 219.2565pt x 153.47969pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 56--57
  [] 
  []
 
 
-Overfull \hbox (8.4435pt too wide) in paragraph at lines 62--69
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/3_5_norm.png, id=34, 400.49625pt x 285.065pt>
+File: figure/3_5_norm.png Graphic file (type png)
+
+<use figure/3_5_norm.png>
+Package pdftex.def Info: figure/3_5_norm.png used on input line 64.
+(pdftex.def)             Requested size: 219.2565pt x 156.06418pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 64--65
+ [] 
+ []
+
+
+Overfull \hbox (8.4435pt too wide) in paragraph at lines 61--68
 \OT1/txr/m/n/12 au-to-mated ad-just-ment varies the volt-age faster
  []
 
 
-Overfull \hbox (1.60352pt too wide) in paragraph at lines 62--69
+Overfull \hbox (1.60352pt too wide) in paragraph at lines 61--68
 \OT1/txr/m/n/12 age ad-just-ment. By se-lect-ing the Ohmic (lin-
  []
 
 
-Overfull \hbox (5.72833pt too wide) in paragraph at lines 69--70
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (5.72833pt too wide) in paragraph at lines 68--69
 []\OT1/txr/m/n/12 We re-ar-range the diode equa-tion as shown
  []
 
 
-Overfull \hbox (12.1005pt too wide) in paragraph at lines 79--79
+Overfull \hbox (12.1005pt too wide) in paragraph at lines 78--78
 [] 
  []
 
 [2 <./figure/3_3.png> <./figure/3_4_diag.png> <./figure/3_4_no_log.png> <./figu
-re/3_4_log.png> <./figure/3_5_norm.png>]
-<figure/3_5_ln2.png, id=62, 400.49625pt x 285.065pt>
+re/3_4_log.png>] <figure/3_5_ln2.png, id=57, 400.49625pt x 285.065pt>
 File: figure/3_5_ln2.png Graphic file (type png)
- <use figure/3_5_ln2.png>
-Package pdftex.def Info: figure/3_5_ln2.png used on input line 84.
+
+<use figure/3_5_ln2.png>
+Package pdftex.def Info: figure/3_5_ln2.png used on input line 83.
 (pdftex.def)             Requested size: 219.2565pt x 156.06418pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 84--85
+Overfull \hbox (9.0pt too wide) in paragraph at lines 83--84
  [] 
  []
 
-<figure/3_7_setup.png, id=65, 227.34938pt x 101.62968pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/3_7_setup.png, id=60, 227.34938pt x 101.62968pt>
 File: figure/3_7_setup.png Graphic file (type png)
 
 <use figure/3_7_setup.png>
-Package pdftex.def Info: figure/3_7_setup.png used on input line 98.
+Package pdftex.def Info: figure/3_7_setup.png used on input line 97.
 (pdftex.def)             Requested size: 219.2565pt x 98.01309pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 98--99
+Overfull \hbox (9.0pt too wide) in paragraph at lines 97--98
  [] 
  []
 
-<figure/3_7.png, id=67, 481.8pt x 234.8775pt>
+<figure/3_7.png, id=62, 481.8pt x 234.8775pt>
 File: figure/3_7.png Graphic file (type png)
  <use figure/3_7.png>
-Package pdftex.def Info: figure/3_7.png used on input line 105.
+Package pdftex.def Info: figure/3_7.png used on input line 104.
 (pdftex.def)             Requested size: 219.2565pt x 106.88734pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 105--106
+Overfull \hbox (9.0pt too wide) in paragraph at lines 104--105
+ [] 
+ []
+
+[3 <./figure/3_5_norm.png> <./figure/3_5_ln2.png> <./figure/3_7_setup.png>]
+
+LaTeX Warning: Reference `3_7' on page 4 undefined on input line 109.
+
+<figure/TEK00015.png, id=77, 421.575pt x 234.8775pt>
+File: figure/TEK00015.png Graphic file (type png)
+ <use figure/TEK00015.png>
+Package pdftex.def Info: figure/TEK00015.png used on input line 117.
+(pdftex.def)             Requested size: 219.2565pt x 122.1585pt.
+
+<figure/TEK00017.png, id=78, 421.575pt x 233.87375pt>
+File: figure/TEK00017.png Graphic file (type png)
+
+<use figure/TEK00017.png>
+Package pdftex.def Info: figure/TEK00017.png used on input line 118.
+(pdftex.def)             Requested size: 219.2565pt x 121.63644pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 117--119
  [] 
  []
 
 
-LaTeX Warning: Reference `3_7' on page 3 undefined on input line 110.
-
-[3 <./figure/3_5_ln2.png> <./figure/3_7_setup.png> <./figure/3_7.png (PNG copy)
->]
-Overfull \hbox (8.77951pt too wide) in paragraph at lines 111--112
-\OT1/txr/m/n/12 the am-pli-tude of the rip-ple de-creased to 1.25V.
+Overfull \hbox (9.0pt too wide) in paragraph at lines 117--119
+ [] 
  []
 
-<figure/3_3_setup.png, id=80, 373.395pt x 95.6072pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/3_3_setup.png, id=79, 373.395pt x 95.6072pt>
 File: figure/3_3_setup.png Graphic file (type png)
 
 <use figure/3_3_setup.png>
-Package pdftex.def Info: figure/3_3_setup.png used on input line 117.
+Package pdftex.def Info: figure/3_3_setup.png used on input line 126.
 (pdftex.def)             Requested size: 219.2565pt x 56.14078pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 117--118
+Overfull \hbox (9.0pt too wide) in paragraph at lines 126--127
  [] 
  []
 
-<figure/3_13_LED.png, id=81, 398.48875pt x 292.09125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/3_10_12.png, id=80, 481.8pt x 92.7465pt>
+File: figure/3_10_12.png Graphic file (type png)
+ <use figure/3_10_12.png>
+Package pdftex.def Info: figure/3_10_12.png used on input line 134.
+(pdftex.def)             Requested size: 219.2565pt x 42.20679pt.
+
+<figure/3_10_13.png, id=81, 481.8pt x 102.3825pt>
+File: figure/3_10_13.png Graphic file (type png)
+ <use figure/3_10_13.png>
+Package pdftex.def Info: figure/3_10_13.png used on input line 135.
+(pdftex.def)             Requested size: 219.2565pt x 46.59192pt.
+
+<figure/3_10_14.png, id=82, 479.7925pt x 136.51pt>
+File: figure/3_10_14.png Graphic file (type png)
+ <use figure/3_10_14.png>
+Package pdftex.def Info: figure/3_10_14.png used on input line 136.
+(pdftex.def)             Requested size: 219.2565pt x 62.38292pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 134--137
+ [] 
+ []
+
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 134--137
+ [] 
+ []
+
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 134--137
+ [] 
+ []
+
+
+Overfull \hbox (4.19551pt too wide) in paragraph at lines 131--141
+\OT1/txr/m/n/12 sense be-cause the off-set adder lim-its the max-
+ []
+
+
+Overfull \hbox (0.73149pt too wide) in paragraph at lines 131--141
+\OT1/txr/m/n/12 i-mum V$[]$ of the sig-nal to 2V, there-fore, any-
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/3_10_17.png, id=84, 481.8pt x 83.31125pt>
+File: figure/3_10_17.png Graphic file (type png)
+ <use figure/3_10_17.png>
+Package pdftex.def Info: figure/3_10_17.png used on input line 144.
+(pdftex.def)             Requested size: 219.2565pt x 37.91302pt.
+
+<figure/3_10_16.png, id=85, 481.8pt x 75.28125pt>
+File: figure/3_10_16.png Graphic file (type png)
+ <use figure/3_10_16.png>
+Package pdftex.def Info: figure/3_10_16.png used on input line 145.
+(pdftex.def)             Requested size: 219.2565pt x 34.25876pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 144--146
+ [] 
+ []
+
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 144--146
+ [] 
+ []
+
+[4 <./figure/3_7.png (PNG copy)> <./figure/TEK00015.png> <./figure/TEK00017.png
+> <./figure/3_3_setup.png>]
+<figure/TEK00022.png, id=101, 481.8pt x 234.8775pt>
+File: figure/TEK00022.png Graphic file (type png)
+ <use figure/TEK00022.png>
+Package pdftex.def Info: figure/TEK00022.png used on input line 156.
+(pdftex.def)             Requested size: 219.2565pt x 106.88734pt.
+
+<figure/TEK00024.png, id=102, 481.8pt x 234.8775pt>
+File: figure/TEK00024.png Graphic file (type png)
+ <use figure/TEK00024.png>
+Package pdftex.def Info: figure/TEK00024.png used on input line 157.
+(pdftex.def)             Requested size: 219.2565pt x 106.88734pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 156--158
+ [] 
+ []
+
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 156--158
+ [] 
+ []
+
+<figure/3_12_fig.png, id=106, 400.49625pt x 285.065pt>
+File: figure/3_12_fig.png Graphic file (type png)
+
+<use figure/3_12_fig.png>
+Package pdftex.def Info: figure/3_12_fig.png used on input line 166.
+(pdftex.def)             Requested size: 219.2565pt x 156.06418pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 166--167
+ [] 
+ []
+
+[5 <./figure/3_10_12.png> <./figure/3_10_13.png> <./figure/3_10_14.png> <./figu
+re/3_10_17.png> <./figure/3_10_16.png> <./figure/TEK00022.png (PNG copy)> <./fi
+gure/TEK00024.png (PNG copy)>]
+<figure/3_13_LED.png, id=122, 398.48875pt x 292.09125pt>
 File: figure/3_13_LED.png Graphic file (type png)
 
 <use figure/3_13_LED.png>
-Package pdftex.def Info: figure/3_13_LED.png used on input line 131.
+Package pdftex.def Info: figure/3_13_LED.png used on input line 175.
 (pdftex.def)             Requested size: 219.2565pt x 160.71306pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 131--132
+Overfull \hbox (9.0pt too wide) in paragraph at lines 175--176
  [] 
  []
 
 
-Overfull \hbox (5.65633pt too wide) in paragraph at lines 128--135
+Overfull \hbox (5.65633pt too wide) in paragraph at lines 172--179
 []\OT1/txr/m/n/12 When we flipped the po-lar-ity of the power
  []
 
 
-Overfull \hbox (8.13153pt too wide) in paragraph at lines 128--135
+Overfull \hbox (8.13153pt too wide) in paragraph at lines 172--179
 \OT1/txr/m/n/12 crease the re-sis-tance, the for-ward volt-age drop
  []
 
 
-Overfull \hbox (8.25081pt too wide) in paragraph at lines 128--135
+Overfull \hbox (8.25081pt too wide) in paragraph at lines 172--179
 \OT1/txr/m/n/12 in-creases and the LED bright-ness dims. When
  []
 
 
-Overfull \hbox (11.67152pt too wide) in paragraph at lines 128--135
+Overfull \hbox (11.67152pt too wide) in paragraph at lines 172--179
 \OT1/txr/m/n/12 the re-sis-tance too large, the volt-age drop across
  []
 
-<figure/3_14_LED.png, id=83, 400.49625pt x 285.065pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/3_14_LED.png, id=124, 400.49625pt x 285.065pt>
 File: figure/3_14_LED.png Graphic file (type png)
 
 <use figure/3_14_LED.png>
-Package pdftex.def Info: figure/3_14_LED.png used on input line 140.
+Package pdftex.def Info: figure/3_14_LED.png used on input line 183.
 (pdftex.def)             Requested size: 219.2565pt x 156.06418pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 140--141
+Overfull \hbox (9.0pt too wide) in paragraph at lines 183--184
  [] 
  []
 
@@ -804,91 +942,135 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 140--141
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `3_18_schematic' on page 4 undefined on input line 145
-.
+Overfull \hbox (11.21234pt too wide) in paragraph at lines 188--189
+[]\OT1/txr/m/n/12 The charge stored in a ca-pac-i-tor dis-charged
+ []
 
 
-Overfull \hbox (0.94032pt too wide) in paragraph at lines 145--146
+Overfull \hbox (1.84279pt too wide) in paragraph at lines 192--198
+\OT1/txr/m/n/12 pac-i-tor dis-charges into the RC cir-cuit formed
+ []
+
+[6 <./figure/3_12_fig.png> <./figure/3_13_LED.png> <./figure/3_14_LED.png>]
+Overfull \hbox (14.15257pt too wide) detected at line 207
+\OML/txmi/m/it/12 V[] \OT1/txr/m/n/12 = 5\OML/txmi/m/it/12 V\OT1/txr/m/n/12 (1 
+\OMS/txsy/m/n/12 ^^@ \OML/txmi/m/it/12 e[]\OT1/txr/m/n/12 ) = 259\OML/txmi/m/it
+/12 mV
+ []
+
+
+Overfull \hbox (4.9995pt too wide) in paragraph at lines 207--210
+\OT1/txr/m/n/12 rip-ple volt-age is 131mV, ap-prox-i-mately equal
+ []
+
+
+Overfull \hbox (6.46278pt too wide) in paragraph at lines 207--210
+\OT1/txr/m/n/12 volt-age (150mV) for the lower fig-ure of Fig.[]9[]. 
+ []
+
+
+Overfull \hbox (0.94032pt too wide) in paragraph at lines 211--212
 []\OT1/txr/m/n/12 We de-signed the zener diode volt-age reg-
  []
 
 
-Overfull \hbox (5.99551pt too wide) in paragraph at lines 145--146
+Overfull \hbox (5.99551pt too wide) in paragraph at lines 211--212
 \OT1/txr/m/n/12 with one re-sis-tor and the 1N5234 zener diode.
  []
 
 
-Overfull \hbox (8.2155pt too wide) in paragraph at lines 145--146
+Overfull \hbox (8.2155pt too wide) in paragraph at lines 211--212
 \OT1/txr/m/n/12 We com-pute the re-sis-tance given that the max-
  []
 
-<figure/3_18_schematic.jpg, id=84, 3246.1275pt x 1631.09375pt>
+<figure/3_18_schematic.jpg, id=143, 3246.1275pt x 1631.09375pt>
 File: figure/3_18_schematic.jpg Graphic file (type jpg)
 
 <use figure/3_18_schematic.jpg>
-Package pdftex.def Info: figure/3_18_schematic.jpg used on input line 152.
+Package pdftex.def Info: figure/3_18_schematic.jpg used on input line 218.
 (pdftex.def)             Requested size: 219.2565pt x 110.1563pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 152--153
+Overfull \hbox (9.0pt too wide) in paragraph at lines 218--219
  [] 
  []
 
-[4 <./figure/3_3_setup.png> <./figure/3_13_LED.png>]
-<figure/3_18_curve.png, id=102, 400.49625pt x 285.065pt>
+<figure/3_18_curve.png, id=144, 400.49625pt x 285.065pt>
 File: figure/3_18_curve.png Graphic file (type png)
 
 <use figure/3_18_curve.png>
-Package pdftex.def Info: figure/3_18_curve.png used on input line 159.
+Package pdftex.def Info: figure/3_18_curve.png used on input line 225.
 (pdftex.def)             Requested size: 219.2565pt x 156.06418pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 159--160
+Overfull \hbox (9.0pt too wide) in paragraph at lines 225--226
  [] 
+ []
+
+
+Overfull \hbox (6.07878pt too wide) in paragraph at lines 214--229
+\OT1/txr/m/n/12 12V$\OMS/txsy/m/n/12 ^^F$\OT1/txr/m/n/12 1.84mV in-put from the
+ bread-board box,
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 171.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (15.73953pt too wide) in paragraph at lines 231--236
+\OT1/txr/m/n/12 plored the temperature-dependence of the diode
+ []
+
+
+Overfull \hbox (4.68752pt too wide) in paragraph at lines 231--236
+\OT1/txr/m/n/12 cludes dif-fer-ent types of diodes, such as light-
+ []
+
+[7 <./figure/3_18_schematic.jpg> <./figure/3_18_curve.png>]
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 243.
+
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 171.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 243.
 
-Overfull \hbox (0.56828pt too wide) in paragraph at lines 173--174
+Overfull \hbox (0.56828pt too wide) in paragraph at lines 244--245
 []\OT1/txr/m/n/10 ``Lab 3 - Diodes." \OT1/txr/m/it/10 Don-ald A. Glaser Ad-vanc
 ed
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
-[5 <./figure/3_14_LED.png> <./figure/3_18_schematic.jpg> <./figure/3_18_curve.p
-ng>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+[8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (./lab3_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `lab3_report.out' has not changed.
-(rerunfilecheck)             Checksum: EF4F43EC3F77A2EA90E93F21F186A2FE;86.
+(rerunfilecheck)             Checksum: 2B8D9EBB17D195EE5375F28268600BF8;41.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
  ) 
 Here is how much of TeX's memory you used:
- 8816 strings out of 493117
- 128753 string characters out of 6135433
- 225290 words of memory out of 5000000
- 12077 multiletter control sequences out of 15000+600000
+ 8886 strings out of 493117
+ 130015 string characters out of 6135433
+ 226677 words of memory out of 5000000
+ 12122 multiletter control sequences out of 15000+600000
  42013 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,17n,40p,579b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+ 42i,19n,40p,640b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
 
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2
@@ -898,10 +1080,10 @@ mf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2014/texmf-dist
 type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on lab3_report.pdf (5 pages, 592327 bytes).
+Output written on lab3_report.pdf (8 pages, 712450 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
