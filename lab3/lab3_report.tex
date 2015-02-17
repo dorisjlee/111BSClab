@@ -31,12 +31,6 @@ When we submerged the diode in liquid nitrogen ---
 Squeezing the diode with our finger causes slight temperature increase in the diode. We can clearly see the increasing trend of ----- as the we change the temperature of the diode.
 \par Diodes do not follow the linear Ohmic behaviour relating voltage and current, but these results still correspond to the semiconductor physics at play. As we decrease the temperature, the conduction electrons has less kinetic energy and therefore slower thermal velocities. Therefore, it requires more work to transport them through the pn junction, since voltage is work per change, the results in a higher voltage drop measured. 
 \section*{3.3}
-\begin{figure}[h!]
-\center
-\includegraphics[width=0.5\textwidth]{figure/3_3_setup}
-\caption{Setup of offset adder to vary voltage from -8V to 8V.}
-\label{3_3_setup}
-\end{figure}
 We connect the offset adder to the DMM to measure the output voltage and varied it from -8 to 8 V. Turning the knob clockwise increases the voltage and vice versa for counterclockwise. We loaded up different resistors, since the output current is kept below 24 mA, the circuit is relatively stiff as shown in the slope of in \ref{3_3}. 
 \begin{figure}[h!]
 \center
@@ -45,27 +39,31 @@ We connect the offset adder to the DMM to measure the output voltage and varied 
 \label{3_3}
 \end{figure}
 \section*{3.4}
-We setup the circuit as shown in Fig.\ref{3_4_diag}, using the offset adder, we vary the voltage and measure the current using ammeter in series and the voltage across the diode. 
 \begin{figure}[h!]
 \center
-\includegraphics[width=0.5\textwidth]{figure/3_4_diag}
-\caption{Setup for }
+\includegraphics[width=0.3\textwidth]{figure/3_4_diag}
+\caption{Setup for measuring the characteristic curve of a diode.}
 \label{3_4_diag}
 \end{figure}
-\section*{3.5}
-
-The curver tracer is  
-Using the Curve Tracer, 
+We setup the circuit as shown in Fig.\ref{3_4_diag}, using the offset adder, we vary the voltage and measure the current using ammeter in series and the voltage across the diode. This manual method used to obtain the characteristic curve yields the plots shown in Fig.\ref{3_4_no_log} and \ref{3_4_log}.
 \begin{figure}[h!]
 \center
-\includegraphics[width=0.5\textwidth]{figure/3_5_ln2}
-\caption{Characteristic curve for diode in liquid nitrogen. (T =170K; $i_{sat}=$, voltage coefficient = )}
-\label{3_5_ln2}
+\includegraphics[width=0.5\textwidth]{figure/3_4_no_log}
+\caption{The VI curve on a linear scale.}
+\label{3_4_no_log}
 \end{figure}
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_4_log}
+\caption{The characteristic curve on with current on a log  scale and voltage on a linear scale.}
+\label{3_4_log}
+\end{figure}
+\section*{3.5}
+As shown in Fig.\ref{3_5_norm}, the curve tracer is a more reliable way of finding the characteristic curve of a diode compared to the measurements done in 3.4. This is because the automated adjustment varies the voltage faster to eliminate possible temperature dependent effects due to slow measurement and voltage adjustment.  By selecting the Ohmic (linear) region on the Curve Tracer program, we obtain the $i_{sat}$ and voltage coefficient. 
 \begin{figure}[h!]
 \center
 \includegraphics[width=0.5\textwidth]{figure/3_5_norm}
-\caption{Characteristic curve for diode at room temperature. (T =298K; $i_{sat}=$, voltage coefficient = ) }
+\caption{Characteristic curve for diode at room temperature. (T =298K; $i_{sat}=2.37\times10^{-9}$, voltage coefficient = 16.49) }
 \label{3_5_norm}
 \end{figure}
 \par We rearrange the diode equation as shown in Eq. \ref{diode_eq} and solve for n as in Eq.\ref{n}
@@ -75,11 +73,18 @@ i(V) = i_{sat}\Bigg[exp(\frac{eV}{nkT})-1\Bigg]
 \end{equation}
 \begin{equation}
 \begin{split}
-n &= \frac{eV}{kT}\frac{1}{ln[\frac{i(V)}{i_{sat}}+1]} \\&= \frac{(1.60\times10^{-19}C)(0.368V)}{1.38\times10^{-23}m^2kgs^{-2}K^{-1}(298K)ln(\frac{0.015A}{5.22\times10^{-7}}+1)}
+n &= \frac{eV}{kT}\frac{1}{ln[\frac{i(V)}{i_{sat}}+1]} \\&= \frac{(1.60\times10^{-19}C)(0.212V)}{1.38\times10^{-23}\frac{m^2kg}{s^{2}K}(298K)}\frac{1}{ln(\frac{6.639\times7A}{2.37\times10^{-9}A}+1)}
 \label{n}
 \end{split}
 \end{equation}
-we do indeed find that the constant n fall within the reasonable range of 1~ 2  depending on the particular diode. Likewise if we evaluate this for a current value in 
+and obtain n= 1.463. Indeed, we do find that the constant n fall within the reasonable range between 1 and 2,  depending on the particular diode. Likewise,% if we evaluate this for a current value of $1.22\times10^{-7}$A and a voltage value of 0.02974V 
+for the diode in liquid nitrogen, then we get a n value of 1.427, which is close to the n at room temperature. The n value is characteristic of a diode and should not be significantly affected by the temperature. The characteristic curve of the diode in liquid nitrogen is shown in \ref{3_5_ln2}, where we could see that the Ohmic region on the LN2 curve is shifted rightward compared to the room temperature diode.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_5_ln2}
+\caption{Characteristic curve for diode in liquid nitrogen. (T =170K; $i_{sat}=5.22\times10^{-8}$, voltage coefficient =9.59)}
+\label{3_5_ln2}
+\end{figure}
 \section*{3.6}
 We setup the experiment by connecting the 1N4448 diode in series with a 1M$\Omega$ resistor and a 12V voltage supply. In order to find the current thoruhg the diode, we measure the value of the voltage drop across the resistor as 327 mV. Using the diode equation (Eq.\ref{diode_eq}), we compute the current through the diode, i(V=327mV), as: 
 \begin{equation*}
@@ -107,6 +112,19 @@ To alleviate the rippling effect observed in Fig.\ref{3_7}, we add a 1$\mu$F cap
 \par  b) Doubling the capacitance also results in a ripple voltage of around 0.08V.
 \par c) By doubling the load resistor, the ripple  voltage is approximately 0.08.
 \section*{3.9}
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_3_setup}
+\caption{Diode analysis }
+\label{3_3_setup}
+\end{figure}
+\section*{3.10}
+
+%For 3.10, Pictures 12, 13, 14 (in Dropbox) correspond to the effect of varying amplitude. These correspond to amplitudes of 2V, 5V and 10V respectively. Pictures 17 and 15 to a negative offset and at 2V peak-to-peak. Picture 16 to a positive offset at peak-to-peak amplitude of 2V as well. The offset adder basically cuts off your signal beyond a certain amplitude and offset. 
+The offset adder adds a constant DC component to the input signal. (i.e. it raises the mean of the signal) However, it does not change the amplitude of the signal. 
+\section*{3.11}
+
+
 \section*{3.13}
 When we flipped the polarity of the power supply, the forward voltage drop is close to zero because no current should be flowing through in the reverse direction of a diode. When we connected the LED to different values of resistance, we find that as we increase the resistance, the forward voltage drop increases and the LED brightness dims. When the resistance too large, the voltage drop across the diode is not enough to power the LED since it is below the LED's cutoff voltage, therefore the LED did not light up for the $30k\Omega$ and 300k$\Omega$ trial.
 \begin{figure}[h!]
@@ -115,7 +133,43 @@ When we flipped the polarity of the power supply, the forward voltage drop is cl
 \caption{The LED's brightness decreases as we increase the resistance, corresponding to a larger voltage drop across the resistance.}
 \label{3_13_LED}
 \end{figure}
+
+\section*{3.14}
+We used the Curve Tracer to obtain the Fig. \ref{3_14_LED} characteristic curve of the blue LED used in the Problem 3.13. 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_14_LED}
+\caption{Characteristic curve of the light-emitting diode (LED). By selecting the Ohmic region of the characteristic curve, the fitting analysis done by Curve Tracer yielded an $i_{sat}$ value of ----- and voltage coefficient of -----. }
+\label{3_14_LED}
+\end{figure}
+\section*{3.18}
+We designed the zener diode voltage regulator shown in Fig.\ref{3_18_schematic}, as a voltage divider with one resistor and the 1N5234 zener diode. We compute the resistance given that the maximum current can not exceed 15mA:
+\begin{equation}
+R_s = \frac{V_{in}-V_{out}}{I_{max}}=\frac{12-6.2 V}{15mA} =386.67\Omega
+\end{equation}
+We construct the necessary $R_s$ by putting a 80,300, and 4$\Omega$ resistor in series. For the 12V$\pm$1.84mV input from the breadboard box, the output voltage regulated by this circuit is measured at 6.2946 V$\pm$1.155 mV.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_18_schematic}
+\caption{Schematic for the zener diode voltage regulator.}
+\label{3_18_schematic}
+\end{figure}
+If we want a less than 5\% decrease in output voltage, then the minimum voltage that satisfies this condition is 5.89V. So the smallest load resistor that will not significantly decrease the circuit output voltage is around 189$\Omega$. 
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_18_curve}
+\caption{Characteristic curve of the 1N5234 zener diode. }
+\label{3_18_curve}
+\end{figure}
 \section{Conclusion}
+demonstrates non linearity of diodes
+using methods such as graphical load line analysis and ---- to ---- 
+non-Ohmic 
+Curve Tracer
+we explore different kinds of diodes such as 
+LED
+Zener diode
 \section*{Acknowledgments}
 \begin{footnotesize}
 The author would like to acknowledge support from the GSI in this lab and with the handling of liquid nitrogen. I would also like to thank my partner, Leah Tom, for helpful discussion and collaboration that helped this work. We also appreciate Sissi Wang for providing us with guidance on question 3.2.
