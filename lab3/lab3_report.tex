@@ -21,7 +21,6 @@
 Diodes are isolated pn junctions widely used in everyday electronics such a the common household AC to DC rectifier.
 %common ---  electronics  widely used in ----- . Their unidirectional behavior is used for rectification They are used to  convert household AC to DC 
 In this lab, we investigated the characteristics of semiconductor diodes. We explored the temperature-dependence of the diode using liquid nitrogen. Using CurveTracer and manually measuring the diode's voltage drop and current , we demonstrate the non-Ohmic VI relation of diodes. We build a diode rectifier and  conduct graphical load line analysis to determine the operating point of the circuit. Finally, we explore different types of diodes, such as light-emitting diode (LED) and the zener diode, their characteristics and applications. 
-\section{Diodes}
 \section*{3.1}
 We connected the 1N4448 diode to the DMM in one direction and measured a resistance of 0.61572$k\Omega$ $\pm$ 0.1138864 $\Omega$. When we reversed direction of the diode and connected the positive grabber to the black band of the diode (Cathode) and the grounding grabber to the red end of the diode(anode), the DMM measured resistance overload. 
 \par This shows that diode conducts only unidirectionally, since if there is a non-overloading resistance reading, it means that the tiny test current passed by the DMM actually pass through to the other end of the terminal, resulting in a forward voltage drop across the diode.
@@ -106,10 +105,10 @@ By measuring the input and output signal waveforms, as shown in Fig.\ref{3_7_tra
 \label{3_7_trace}
 \end{figure}
 \section*{3.8}
-To alleviate the rippling effect observed in Fig.\ref{3_7}, we add a 1$\mu$F capacitor in parallel to the load resistor in the rectifier shown in Fig.\ref{3_7_setup}. The peak-to-peak voltage of the original input signal  is 10V, without the rippling the $V_{pp}$ is equal to the amplitude.
-The ripple amplitude decreases as shown in Fig. \ref{ripple}, because we are changing the time constant in the expression $e^{-t/\tau}$. Increase in resistance and capacitance increases the $\tau$, since $\tau$ = RC, causing the signal to flatten and reducing the ripple amplitude. This is proven from the changes to the circuit: 
+To alleviate the rippling effect observed in Fig.\ref{3_7_trace}, we add a 1$\mu$F capacitor in parallel to the load resistor in the rectifier shown in Fig.\ref{3_7_setup}. The peak-to-peak voltage of the original input signal  is 10V, without the rippling the $V_{pp}$ is equal to the amplitude. With the circuit connected the ripple voltage is at 300mV.
 \par a) When we double the input frequency, %the amplitude of the ripple  decreased to 1.25V. %The measured $V_{pp}$ is 1.32V. 
-the difference between the $V_{pp}$ and amplitude tells us that the ripple is around 150mV .  
+the difference between the $V_{pp}$ and amplitude tells us that the ripple is around 150mV.  This decrease makes sense because the period over which the capacitor discharges remains the same compared to the period of the signal. So over a shorted period, the signal becomes flatter, thus suppressing the ripple amplitude. 
+\par  The ripple amplitude decreases as shown in Fig. \ref{ripple}, because we are changing the time constant in the expression $e^{-t/\tau}$. Increase in resistance and capacitance increases the $\tau$, since $\tau$ = RC, causing the signal to flatten and reducing the ripple amplitude. This is proven from the changes to the circuit: 
 \par  b) Doubling the capacitance also results in a ripple voltage of around 150mV.
 \par c) By doubling the load resistor, the ripple voltage is approximately 150mV.
 \begin{figure}[h!]
@@ -119,13 +118,32 @@ the difference between the $V_{pp}$ and amplitude tells us that the ripple is ar
 \caption{Top: The original waveform. Bottom: The waveform after the rectification, note that the ripple voltage has decreased after the insertion of the load resistor and capacitor.}
 \label{ripple}
 \end{figure}
-
 \section*{3.9}
+We build the circuit as shown in Fig.\ref{3_9_setup} and varied the offset. We measured the output voltage resulting from the different offset as recorded in the table below. We conduct this procedure on both the 1k$\Omega$ and 10k$\Omega$ resistors.
 \begin{figure}[h!]
 \center
-\includegraphics[width=0.5\textwidth]{figure/3_3_setup}
-\caption{Diode analysis }
+\includegraphics[width=0.5\textwidth]{figure/fig2}
+\caption{Circuit setup for 3.9.}
 \label{3_9_setup}
+\end{figure}
+\par We perform the load line analysis using the data we obtained from the experiment as shown in Fig.\ref{ll}. Then we zoomed in on the intersecting regions to find the equilibrium voltage, as demonstrated in Fig.\ref{intersect}. The values are tabulated below for the 1k$\Omega$ and 10k$\Omega$ resistors  in series with the diode.
+\begin{figure}[h!]\label{ll}
+\center
+\includegraphics[width=0.5\textwidth]{figure/loadlines}
+\caption{Diode characteristic curve and the two load lines corresponding to the different resistors.}
+\end{figure}
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/table}
+\label{table}
+\end{figure}
+The predicted equilibrium point from the load line analysis does not agree with the voltage values that we measured. However, the trend of the data corresponds; both the predicted value and $V_{out}$ measurements shows an increasing trend as expected.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/intersect}
+\includegraphics[width=0.5\textwidth]{figure/intersect_10k}
+\caption{Top: For the 1k$\Omega$ resistor, the operating point indicated by the intersection occurs at 0.4866V. Bottom: For the 10k$\Omega$ resistor, the operating point indicated by the intersection occurs at 0.4865V.}
+\label{intersect}
 \end{figure}
 \section*{3.10}
 For the V$_{pp}$ 2V signal, the offset adder simply adds the input signal with the offset. However, when we vary the amplitude of the input signal to 5V and 10V , we find that the signal have flattened peak. This makes sense because the offset adder limits the maximum V$_{pp}$ of the signal to 2V, therefore, anything signal above 2V gets cutoff and any signal below it is preserved. 
@@ -150,7 +168,7 @@ The offset adder adds a constant DC component to the input signal. (i.e. it rais
 %For 3.10, Pictures 12, 13, 14 (in Dropbox) correspond to the effect of varying amplitude. These correspond to amplitudes of 2V, 5V and 10V respectively. Pictures 17 and 15 to a negative offset and at 2V peak-to-peak. Picture 16 to a positive offset at peak-to-peak amplitude of 2V as well. The offset adder basically cuts off your signal beyond a certain amplitude and offset. 
  
 \section*{3.11}
-We reconnected the 10k$\Omega$ resistor and diode to the offset adder as shown in  Fig.\ref{3_3}. As shown in the bottom scope trace of Fig. \ref{3_11}, there is equal amplitude of the signal above and below the x axis. The signal does not get rectified like it does in Fig.\ref{3_7_trace} in 3.7.  This makes sense because the offset adder consist of a capacitor inside its circuit. We see an AC signal because the offset adder is a non-zero offset that causes the capacitor to get charged and discharged on each cycle as it alternates. Since the reverse signal is very small ($\approx$ 0.1V),  -----??
+We reconnected the 10k$\Omega$ resistor and diode to the offset adder as shown in  Fig.\ref{3_3}. As shown in the bottom scope trace of Fig. \ref{3_11}, there is equal amplitude of the signal above and below the x axis. The signal does not get rectified like it does in Fig.\ref{3_7_trace} in 3.7.  This makes sense because the offset adder consist of a capacitor inside its circuit. We see an AC signal because the offset adder is a non-zero offset that causes the capacitor to get charged and discharged on each cycle as it alternates. Since the diode is never in reverse bias in this case, the voltage never becomes negative and so the diode allows all the current to pass through. 
 \begin{figure}[h!]
 \center
 \includegraphics[width=0.5\textwidth]{figure/TEK00022}
@@ -176,6 +194,7 @@ When we flipped the polarity of the power supply, the forward voltage drop is cl
 \caption{The LED's brightness decreases as we increase the resistance, corresponding to a larger voltage drop across the resistance.}
 \label{3_13_LED}
 \end{figure}
+\vspace{-20pt}
 \section*{3.14}
 We used the Curve Tracer to obtain the Fig. \ref{3_14_LED} characteristic curve of the blue LED used in the Problem 3.13. 
 \begin{figure}[h!]
@@ -207,6 +226,42 @@ For the nominal values in 3.8, C=1$\mu$F and R=47k$\Omega$, $V_0$=5V:
 $$V_{ripple} = 5V(1-e^{-1/(2(200Hz)(47k\Omega)(1\mu F))})=259mV$$
 This is close to the amplitude of the ripple shown in the original waveform in Fig.\ref{ripple}. \footnote{Estimated as 6/10 of a division, each division is 500mV.}
 As we doubled the f,R,or C, in 3.8, the new ripple voltage is 131mV, approximately equal to the corresponding estimate of the ripple voltage (150mV) for the lower figure of Fig.\ref{ripple}.
+\section*{3.16}
+We performed the graphical perturbation analysis by offsetting our load line by the offset adder value as shown in Fig.\ref{perturb}. We chose these offsets because they are small changes to the system parameters for the perturbation analysis.  We find the intersection between the new load line and the characteristic curve of our diode. Graphically, we observe that the $\Delta V$ is around 0.02, 0.015 and 0.015V which is much smaller than the change in battery voltage $\Delta V_0$ 0.25, 0.50 and 0.75V respectively. The intersecting points for the operating point does not agreee with our reselts. This is because we are assuming a linear change in our perturbation analysis; however, the DC off setter also cuts off the signal beyond the maximum voltage, resulting in the decreasing relation shown in Fig.\ref{3_12}.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/doris}
+\caption{Graphical perturbation analysis of loadlines with different offset values.}
+\label{perturb}
+\end{figure}
+\section*{3.17}
+Using the offset load lines in 3.16 and the diode characteristic curve, we computed the slope of the characteristic curve at each computed operating points. The reciprocal of this computed slope yields the small signal impedance at each of these points, since the differential impedance is computed by $Z=\frac{\partial V}{\partial I}$ and the slope is $\frac{\partial I}{\partial V}$.  
+\begin{figure}
+\center
+\includegraphics[width=0.5\textwidth]{figure/table1}
+\end{figure}
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/doris}
+\caption{The derivative at the particular point was computed by the finite difference differentiation of $[f(x+h)-f(x)]/h$ where h is a small voltage step. }
+\label{slope}
+\end{figure}
+We assumed that the diode was a resistor in a circuit in series with a 10kΩ resistor and based on the voltage divider equation:
+\begin{equation}
+V_{diode}=  Z_{diode}/(Z_{diode}+10k\Omega)  V_0
+\end{equation}
+The values we obtained for voltage across diode using small signal impedance perturbation analysis are compared against the values we measured below.
+\begin{figure}
+\center
+\includegraphics[width=0.5\textwidth]{figure/table2}
+\end{figure}
+\par  As shown in \ref{bad}, our prediction did not agree with the data from 3.12  but shows the same general decreasing trend. If we used the large-signal impedance instead, it would yield a voltage divider output much larger than the actual answer because the function describing the characteristic curve is monotonically increasing and the slope is also increasing. So if we compute the finite sum differentiation over a large step, then the resulting slope would be larger.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/bad}
+\caption{Plotting the predictions on the 3.12 graph. The green line is the prediction and the red line is the data from 3.12.}
+\label{bad}
+\end{figure}
 \section*{3.18}
 We designed the zener diode voltage regulator shown in Fig. \ref{3_18_schematic}, as a voltage divider with one resistor and the 1N5234 zener diode. We compute the resistance given that the maximum current can not exceed 15mA:
 \begin{equation}
@@ -227,15 +282,52 @@ If we want a less than 5\% decrease in output voltage, then the minimum voltage 
 \label{3_18_curve}
 \end{figure}
 \section*{3.19}
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/3_19_setup}
+\caption{BiasDiode simulation on MultiSim.}
+\label{3_19_setup}
+\end{figure}
+The BiasDiode simulation setup is shown in Fig.\ref{3_19_setup}. When the signal generator has $V_{pp}$=$1\times10^{-5}$V, the input and output signal is shown in Fig.\ref{firstrow}.
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/1}
+\includegraphics[width=0.5\textwidth]{figure/Part2-Part1}
+\caption{Input signal(red) and output signal(green). Top: At amplitude =$1\times10^{-5}$V. Bottom: At amplitude =1V}
+\label{firstrow}
+\end{figure}
+\par  We use the Fourier decomposition to determine the purity of the waves. The Fourier analysis of the output and input signals are shown below. As shown in Fig.\ref{fourier1} he strength of the second harmonic of the output signal is 8 orders of magnitude stronger than that of the input. 
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/V_in_2}
+\includegraphics[width=0.5\textwidth]{figure/V_out_2}
+\caption{ Top: Input signal. Bottom: Output signal}
+\label{fourier1}
+\end{figure}
+\par We also examine the fourier decomposition of the output and input signal in Fig.\ref{fourier2}. Notice that the  positive component of the output signal has been rectified and flattened. As the signal has been cut-off in reverse bias, the flattening is due to the discharging of the capacitor, C1.  
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.5\textwidth]{figure/V_in_Part3or2}
+\includegraphics[width=0.5\textwidth]{figure/V_out_Part3actually2}
+\caption{Top: Input signal. Bottom: Output signal}
+\label{fourier2}
+\end{figure}
+\par Even though we see strong odd harmonics in the input signal, the output signa's harmonics is decreasing. The second harmonic is 15 orders of magnitude stronger in the output signal compared to the input signal and is only 1 order of magnitude lesser than the fundamental harmonic. There was no amplitude for which the second harmonic was stronger than the fundamental. The output signals for different values of the VAC are displayed below. The minimum order of magnitude where observe significant frequency doubling is at $10^{-5}$V. The second harmonic attenuates significantly from $10^{-5}$V to an order of magnitude lower as shown in the bottom most figure.
+\begin{figure}
+\center
+\includegraphics[width=0.5\textwidth]{figure/0_01V}
+\includegraphics[width=0.5\textwidth]{figure/0_001V}
+\includegraphics[width=0.5\textwidth]{figure/0_000001V}
+\caption{Top: 0.01V. Middle:0.001V Bottom: 0.000001V}
+\label{fourier3}
+\end{figure}
+\par  Frequency doubling is a phenomenon observed in non-linear circuits and is part of a broader response of frequency multiplying. When a pure sinusoidal wave is introduced into a non-linear circuit, it responds by distorting the signal and distributing the power across the higher harmonics. This is why we observe a significantly stronger second harmonic in the output signal.
 \section*{Conclusion}
-In this lab, we investigated the characteristics of semiconductor diodes . We explored the temperature-dependence of the diode using liquid nitrogen. Using CurveTracer and manually measuring the diode's voltage drop and current , we demonstrate the nonlinear VI relation of diodes. We further examine how a circuit behavior is altered with the addition of a diode and how their one-directional nature can be useful for various applications. % 
-%using methods such as graphical load line analysis and ---- to ---- 
-%non-Ohmic 
-We explore circuits that includes different types of diodes, such as light-emitting diode and zener diode, to investigate their characteristics and applications. 
+In this lab, we investigated the characteristics of semiconductor diodes . We explored the temperature-dependence of the diode using liquid nitrogen. Using CurveTracer and manually measuring the diode's voltage drop and current , we demonstrate the nonlinear VI relation of diodes. We further examine how a circuit behavior is altered with the addition of a diode and how their one-directional nature can be useful for various applications. We explore circuits that includes different types of diodes, such as light-emitting diode and zener diode, to investigate their characteristics and applications. 
 %Diodes are useful --- their one directional characteristic
 \section*{Acknowledgments}
 \begin{footnotesize}
-The author would like to acknowledge support from the GSI in this lab and with the handling of liquid nitrogen. I would also like to thank my partner, Leah Tom, for helpful discussion and collaboration that helped this work. We also appreciate Sissi Wang for providing us with guidance on question 3.5, 3.8, and 3.9.
+The author would like to acknowledge support from the GSI in this lab in addressing our questions about the lab and with the handling of liquid nitrogen. I would also like to thank my partner, Leah Tom, for helpful discussion and collaboration that helped this work. We also appreciate Sissi Wang for providing us with guidance on question 3.5, 3.8, and 3.9.
 \end{footnotesize}
   \section*{References}
  \begin{footnotesize}
