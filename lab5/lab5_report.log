@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  24 FEB 2015 14:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 FEB 2015 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lab4_report.tex
-(./lab4_report.tex
+**lab5_report.tex
+(./lab5_report.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./elsarticle.cls
@@ -88,6 +88,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
+(./lab5_report.spl)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
@@ -96,7 +97,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count94
 )
 \splwrite=\write3
-\openout3 = `lab4_report.spl'.
+\openout3 = `lab5_report.spl'.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
@@ -433,11 +434,12 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-No file lab4_report.aux.
-\openout1 = `lab4_report.aux'.
+(./lab5_report.aux)
+\openout1 = `lab5_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 15.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 15.
+
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
@@ -554,8 +556,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
+
+(./lab5_report.out) (./lab5_report.out)
 \@outlinefile=\write4
-\openout4 = `lab4_report.out'.
+\openout4 = `lab5_report.out'.
 
 LaTeX Info: Redefining \celsius on input line 15.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 15.
@@ -590,61 +594,177 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 19.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 34.
+<figure/q1setup.png, id=5, 153.6942pt x 110.0913pt>
+File: figure/q1setup.png Graphic file (type png)
+ <use figure/q1setup.png>
+Package pdftex.def Info: figure/q1setup.png used on input line 26.
+(pdftex.def)             Requested size: 175.40251pt x 125.64478pt.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 34.
-
-Overfull \hbox (0.56828pt too wide) in paragraph at lines 35--36
-[]\OT1/txr/m/n/10 ``Lab 3 - Diodes." \OT1/txr/m/it/10 Don-ald A. Glaser Ad-vanc
-ed
+Overfull \hbox (4.81549pt too wide) in paragraph at lines 30--31
+\OT1/txr/m/n/12 and source to get a $\OML/txmi/m/it/12 V[]$ \OT1/txr/m/n/12 val
+ue of 1.60V$\OMS/txsy/m/n/12 ^^F$\OT1/txr/m/n/12 0.592
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+
+Overfull \hbox (18.91472pt too wide) in paragraph at lines 30--31
+\OT1/txr/m/n/12 mV, $\OML/txmi/m/it/12 V[]$ \OT1/txr/m/n/12 of 11.42V $\OMS/txs
+y/m/n/12 ^^F$ \OT1/txr/m/n/12 5.3704mV, $\OML/txmi/m/it/12 I[]$ \OT1/txr/m/n/12
+ of $0\OML/txmi/m/it/12 :\OT1/txr/m/n/12 0149 \OMS/txsy/m/n/12 ^^F
+ []
+
+
+Overfull \hbox (0.94348pt too wide) in paragraph at lines 30--31
+\OT1/txr/m/n/12 2\OML/txmi/m/it/12 :\OT1/txr/m/n/12 188 \OMS/txsy/m/n/12 ^^B \O
+T1/txr/m/n/12 10[]$mA. The the-o-ret-i-cal gain is com-
+ []
+
+
+Overfull \hbox (3.75151pt too wide) in paragraph at lines 30--31
+\OT1/txr/m/n/12 puted as be-low, by as-sum-ing that the as-sump-
+ []
+
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
+ <./figure/q1setup.png>]
+Overfull \hbox (10.0603pt too wide) in paragraph at lines 54--55
+[]\OT1/txr/m/n/12 We built the dif-fer-en-tial am-pli-fier as shown
+ []
+
+
+Overfull \hbox (2.1315pt too wide) in paragraph at lines 54--55
+\OT1/txr/m/n/12 mea-sure-ment is 140.7$[]$ and -54$[]$ re-spec-tively. 
+ []
+
+
+Overfull \hbox (0.6075pt too wide) in paragraph at lines 55--56
+\OT1/txr/m/n/12 sides of the dif-fer-en-tial am-pli-fier is sup-posed
+ []
+
+<figure/q5setup.png, id=27, 216.20775pt x 163.20975pt>
+File: figure/q5setup.png Graphic file (type png)
+
+<use figure/q5setup.png>
+Package pdftex.def Info: figure/q5setup.png used on input line 59.
+(pdftex.def)             Requested size: 219.2565pt x 165.51292pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+<figure/q8setup.png, id=28, 177.0615pt x 112.0185pt>
+File: figure/q8setup.png Graphic file (type png)
+ <use figure/q8setup.png>
+Package pdftex.def Info: figure/q8setup.png used on input line 70.
+(pdftex.def)             Requested size: 219.2565pt x 138.72371pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 70--71
+ [][] 
+ []
+
+
+Overfull \hbox (12.50832pt too wide) in paragraph at lines 64--75
+[]\OT1/txr/m/n/12 We set the po-ten-tiome-ter so that we achieve
+ []
+
+[2 <./figure/q5setup.png> <./figure/q8setup.png>]
+Overfull \hbox (6.1868pt too wide) in paragraph at lines 79--83
+\OT1/txr/m/n/12 est pos-si-ble JFET drain-source re-sis-tance cor-
+ []
+
+<figure/q9setup.png, id=43, 216.20775pt x 133.09724pt>
+File: figure/q9setup.png Graphic file (type png)
+
+<use figure/q9setup.png>
+Package pdftex.def Info: figure/q9setup.png used on input line 87.
+(pdftex.def)             Requested size: 219.2565pt x 134.97548pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 87--88
+ [][] 
+ []
+
+
+Overfull \hbox (3.31952pt too wide) in paragraph at lines 84--98
+\OT1/txr/m/n/12 an am-pli-tude mod-u-la-tor. Using an-other func-
+ []
+
+
+Overfull \hbox (1.9395pt too wide) in paragraph at lines 84--98
+\OT1/txr/m/n/12 lated out-put sig-nal is shown in Fig.[]5[]. (NEED
+ []
+
+
+LaTeX Warning: Reference `q12setup' on page 3 undefined on input line 101.
+
+<figure/q12setup.png, id=46, 216.20775pt x 126.4725pt>
+File: figure/q12setup.png Graphic file (type png)
+
+<use figure/q12setup.png>
+Package pdftex.def Info: figure/q12setup.png used on input line 104.
+(pdftex.def)             Requested size: 175.40251pt x 102.60426pt.
+ <figure/q12trace.png, id=47, 481.8pt x 234.8775pt>
+File: figure/q12trace.png Graphic file (type png)
+
+<use figure/q12trace.png>
+Package pdftex.def Info: figure/q12trace.png used on input line 111.
+(pdftex.def)             Requested size: 175.40251pt x 85.50557pt.
+
+Overfull \hbox (5.7435pt too wide) in paragraph at lines 101--115
+\OT1/txr/m/n/12 a square wave with pe-riod of 1200$\OML/txmi/m/it/12 ^^V$\OT1/t
+xr/m/n/12 s. (MUST
+ []
+
+[3 <./figure/q9setup.png> <./figure/q12setup.png> <./figure/q12trace.png (PNG c
+opy)>]
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 125.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 125.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+
+[4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+ (./lab5_report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package rerunfilecheck Info: File `lab5_report.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-(./lab4_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Warning: File `lab4_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lab4_report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 8637 strings out of 493117
- 126060 string characters out of 6135433
- 218604 words of memory out of 5000000
- 11971 multiletter control sequences out of 15000+600000
- 23887 words of font info for 62 fonts, out of 8000000 for 9000
+ 8750 strings out of 493117
+ 127669 string characters out of 6135433
+ 223166 words of memory out of 5000000
+ 12036 multiletter control sequences out of 15000+600000
+ 40697 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,5n,40p,376b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on lab4_report.pdf (1 page, 42939 bytes).
+ 42i,8n,40p,589b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on lab5_report.pdf (4 pages, 108292 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
