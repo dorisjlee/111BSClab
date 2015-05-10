@@ -3,7 +3,7 @@ def compute_uncertainty(value,basic_range,mV=False):
     if (mV):
         return str(result*1e3)+"mV" 
     return result 
-print compute_uncertainty(1.6,10,True)
-print compute_uncertainty(11.42,100,True)
-print compute_uncertainty(0.0149e-3,0.01e-3,True)
+#print compute_uncertainty(1.6,10,True)
+#print compute_uncertainty(11.42,100,True)
+print compute_uncertainty(0.023,0.001,True)
 

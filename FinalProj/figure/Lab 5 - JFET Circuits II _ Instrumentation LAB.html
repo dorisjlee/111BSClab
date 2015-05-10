@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<head>
+<script type="text/x-mathjax-config">    MathJax.Hub.Config({      showProcessingMessages: false,     messageStyle: "simple",     jax: ["input/TeX", "output/HTML-CSS"],     extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],     TeX: {       extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]     },     "HTML-CSS": { availableFonts: ["TeX"] },     tex2jax: {       inlineMath: [ ['$','$'], ['//(','//)'] ],       displayMath: [ ['$$','$$'] ],       processEscapes: true     }   }); </script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="http://instrumentationlab.berkeley.edu/sites/all/themes/responsive/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortlink" href="/node/14" />
+<link rel="canonical" href="/Lab5" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ['tex2jax.js'],
+  jax: ['input/TeX','output/HTML-CSS'],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true,
+    processClass: 'tex2jax',
+    ignoreClass: 'html'
+  },
+  showProcessingMessages: false,
+  messageStyle: 'none'
+});
+</script><title>Lab 5 - JFET Circuits II | Instrumentation LAB</title>
+<link type="text/css" rel="stylesheet" href="http://instrumentationlab.berkeley.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://instrumentationlab.berkeley.edu/sites/default/files/css/css_vZ7OMldNxT0kN_1nW7_5iIquAxAdcU-aJ-ucVab5t40.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://instrumentationlab.berkeley.edu/sites/default/files/css/css_WRAAZvAngFynVvFXiF7V2RAQx22XJg4axrOPQlsfHlo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://instrumentationlab.berkeley.edu/sites/default/files/css/css_aLRTSnRqGqpKGL57lwJGh2RGSNmdkaaJwuV71hOOlUU.css" media="all" />
+<script type="text/javascript" src="http://instrumentationlab.berkeley.edu/sites/default/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script type="text/javascript" src="http://instrumentationlab.berkeley.edu/sites/all/modules/lightbox2/js/lightbox.js?1430950695"></script>
+<script type="text/javascript" src="http://instrumentationlab.berkeley.edu/sites/default/files/js/js_Ob6pZ736pjR_Xg9QZdUa-rvxsoO5iKYI1n9qLl3ZtYk.js"></script>
+<script type="text/javascript" src="/sites/all/libraries/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="http://instrumentationlab.berkeley.edu/sites/default/files/js/js_l38B4VVekweaJH047zNAvkTH8iG1L-8qH4gJUz8hrwQ.js"></script>
+<script type="text/javascript" src="http://instrumentationlab.berkeley.edu/sites/default/files/js/js_VnBYYlrGnetDacjaDGT6rzZnX5d5_ccJnjE31ik6efw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"responsive","theme_token":"GH6_F9WXdNYID5wiIdlxLJSMcRglC1rh0XWlZ-iupIo","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/mathjax\/mathjax.js":1,"\/sites\/all\/libraries\/mathjax\/MathJax.js?config=TeX-AMS-MML_HTMLorMML":1,"profiles\/ucb_start\/modules\/ucb\/ucb_cas\/cas\/cas.js":1,"sites\/all\/themes\/responsive\/js\/jquery.mobilemenu.js":1,"sites\/all\/themes\/responsive\/js\/superfish.js":1,"sites\/all\/themes\/responsive\/js\/custom.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ucb_start\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"profiles\/ucb_start\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/print\/print_ui\/css\/print_ui.theme.css":1,"profiles\/ucb_start\/modules\/ucb\/ucb_cas\/cas\/cas.css":1,"sites\/all\/themes\/responsive\/css\/responsive-style.css":1,"sites\/all\/themes\/responsive\/css\/layout.css":1,"sites\/all\/themes\/responsive\/flexslider.css":1,"sites\/all\/themes\/responsive\/style.css":1,"sites\/all\/themes\/responsive\/color\/colors.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false}});
+//--><!]]>
+</script>
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-14 node-type-page">
+    <script type="text/x-mathjax-config">    MathJax.Hub.Config({      showProcessingMessages: false,     messageStyle: "simple",     jax: ["input/TeX", "output/HTML-CSS"],     extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],     TeX: {       extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]     },     "HTML-CSS": { availableFonts: ["TeX"] },     tex2jax: {       inlineMath: [ ['$','$'], ['//(','//)'] ],       displayMath: [ ['$$','$$'] ],       processEscapes: true     }   }); </script>
+<div class="container">
+
+  <header id="head" role="banner">
+    <hgroup class="five columns alpha">
+       <div id="logo">
+        <a href="/" title="Home"><img src="http://instrumentationlab.berkeley.edu/sites/default/files/logo_0.png" alt="Home"/></a>               </div>
+    </hgroup>
+    
+    <div class="eleven columns omega" id="headright">
+            
+      <nav id="navigation" role="navigation">
+      <div id="main-menu">
+        <ul class="menu"><li class="first leaf"><a href="/">Home</a></li>
+<li class="expanded active-trail"><a href="/labassignments" class="active-trail">Lab Assignments</a><ul class="menu"><li class="first leaf"><a href="/Lab1">Lab 1-Linear Circuits I</a></li>
+<li class="leaf"><a href="/Lab2">Lab 2-Linear Circuits II</a></li>
+<li class="leaf"><a href="/Lab3">Lab 3-Diodes</a></li>
+<li class="leaf"><a href="/Lab4">Lab 4-JFET Circuits I</a></li>
+<li class="leaf active-trail"><a href="/Lab5" class="active-trail active">Lab 5-JFET Circuits II</a></li>
+<li class="leaf"><a href="/Lab6">Lab 6-Op Amps I</a></li>
+<li class="leaf"><a href="/Lab7">Lab 7-Op Amps II</a></li>
+<li class="leaf"><a href="/Lab8">Lab 8-Op Amps III</a></li>
+<li class="leaf"><a href="/Lab9">Lab 9-LabVIEW</a></li>
+<li class="leaf"><a href="/Lab10">Lab 10-ADC &amp; DAC</a></li>
+<li class="leaf"><a href="/Lab11">Lab 11-Signals &amp; Feedback</a></li>
+<li class="leaf"><a href="/Lab12">Lab 12-Final Project</a></li>
+<li class="last expanded"><a href="/node/27">Digital Labs</a><ul class="menu"><li class="first leaf"><a href="/Digital1">Digital Circuits I</a></li>
+<li class="last leaf"><a href="/Digital2">Digital Circuits II</a></li>
+</ul></li>
+</ul></li>
+<li class="leaf"><a href="/syllabus">Syllabus</a></li>
+<li class="expanded"><a href="/resources">Resources</a><ul class="menu"><li class="first leaf"><a href="/survey">Background Survey</a></li>
+<li class="leaf"><a href="/computer">Computer Use Policy</a></li>
+<li class="leaf"><a href="/instrumentationvideo">Introduction Equipment Video</a></li>
+<li class="leaf"><a href="/Writeups">Lab Write-Up How To</a></li>
+<li class="leaf"><a href="/labviewprograms">Labview Programs</a></li>
+<li class="leaf"><a href="/Multisim">Multisim Tutorial</a></li>
+<li class="leaf"><a href="/system/files/soldering_0.pdf" title="">Soldering Guide</a></li>
+<li class="leaf"><a href="/solderingvideo">Soldering Video</a></li>
+<li class="leaf"><a href="/StudentEvaluation">Student Evaluation</a></li>
+<li class="leaf"><a href="/labreports">Writing Lab Reports</a></li>
+<li class="last leaf"><a href="/system/files/xyz_scopes_0.pdf" title="">xyzofscopes</a></li>
+</ul></li>
+<li class="last leaf"><a href="/user" title="">My Account</a></li>
+</ul>       </div>
+      </nav><!-- end main-menu -->
+     </div>
+  </header>
+</div>
+  
+<div class="container" id="content-contain">
+
+    
+    
+  
+     <div id="header" class="sixteen columns">
+    <div class="region region-header">
+  <div id="block-search-form" class="block block-search">
+
+      
+  <div class="content">
+    <form action="/Lab5" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-S40ZLtCt3E2XJGH8F7Mu5O_DFzBDzcCW278pQ4qKmHA" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+   </div>
+   <div class="clear"></div>
+     
+  
+ <div id="content" class="sixteen columns">
+  <div id="breadcrumbs"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="/">Home</a> » <a href="/labassignments">Lab Assignments</a> » Lab 5 - JFET Circuits II</nav></div>
+   <section id="post-content" role="main">
+                <h1 class="page-title">Lab 5 - JFET Circuits II</h1>                    <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                          <span property="dc:title" content="Lab 5 - JFET Circuits II" class="rdf-meta element-hidden"></span>  
+      
+    
+  <div class="content node-page">
+    <span class="print-link"><span class="print_pdf"><a href="http://instrumentationlab.berkeley.edu/printpdf/14" title="Display a PDF version of this page." class="print-pdf" rel="nofollow">PDF version</a></span></span><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><div class="tex2jax"><div class="WordSection1">
+<p class="rtecenter"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><strong><span style="font-size:26px;">University of California at Berkeley</span></strong></span></p>
+
+<p class="rtecenter"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><strong><span style="font-size:26px;">Donald A. Glaser Physics 111</span></strong></span></p>
+
+<p class="rtecenter"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><strong><span style="font-size:26px;">Instrumentation Laboratory</span></strong></span></p>
+
+<p class="rtecenter"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:22px;"><strong>Lab 5</strong></span></span></p>
+
+<p class="MsoTitle rtecenter"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:22px;"><strong>&nbsp;</strong></span></span><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:22px;"><strong>JFET Circuits II</strong></span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">©2014&nbsp;by the Regents of the University of California. All rights reserved.</span></span></p>
+
+<p class="MsoTitle" style="text-align:justify"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoTitle" style="text-align:justify"><strong><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:16.0pt">References:</span></span></strong></p>
+
+<p class="MsoTitle" style="margin-left:2.0in;text-align:justify;text-indent:-1.5in"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt;font-weight:normal">Hayes &amp; Horowitz Chapter 3</span></span></p>
+
+<p class="MsoTitle" style="margin-left:2.0in;text-align:justify;text-indent:-1.5in"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt;font-weight:normal">Horowitz &amp; Hill&nbsp;&nbsp;&nbsp;&nbsp; Chapter 3</span></span></p>
+
+<p class="LargeHeader"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+</div>
+
+<div class="WordSection2">
+<p class="MsoNormal">&nbsp;<em><strong>NOTE: You can check out and keep the portable breadboards, VB-106 or VB-108,&nbsp; from the 111-Lab for yourself&nbsp; ( Only one each please)</strong></em></p>
+
+<p class="MsoNormal"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">In this lab you will investigate some more sophisticated JFET circuits, such as voltage amplifiers, differential amplifiers, attenuators, and modulators.</span></span></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:6.0pt"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:16.0pt">Before coming to class complete this list of tasks:</span></b></span></p>
+
+<ul>
+	<li class="MsoNormal" style="margin-top: 6pt;"><span style="font-family: 'century schoolbook', serif; font-size: 16px; line-height: 16px; text-indent: -24px;">C</span><span style="font-family: 'century schoolbook', serif; font-size: 16px; line-height: 16px; text-indent: -24px;">ompletely read the Lab Write-up</span></li>
+	<li class="MsoNormal" style="margin-top: 6pt;"><span style="font-family: 'century schoolbook', serif; font-size: 16px; line-height: 16px; text-indent: -24px;">Answer the pre-lab questions utilizing the references and the write-up</span></li>
+	<li class="MsoNormal" style="margin-top: 6pt;"><span style="font-family: 'century schoolbook', serif; font-size: 16px; line-height: 16px; text-indent: -24px;">Perform&nbsp;</span><span style="font-family: 'century schoolbook', serif; font-size: 16px; line-height: 16px; text-indent: -24px;">any circuit c</span><span style="font-family: 'century schoolbook', serif; font-size: 16px; line-height: 16px; text-indent: -24px;">alculations or anything that can be done outside of lab.</span></li>
+	<li class="MsoNormal" style="margin-top: 6pt;"><span style="font-family: 'century schoolbook', serif; font-size: 16px; line-height: 16px; text-indent: -24px;">Plan out how to perform Lab tasks.</span></li>
+</ul>
+
+<p align="left" class="MsoNormal" style="margin-left:1.0in;text-align:left;
+text-indent:-.25in"><span style="font-family:century schoolbook,serif;line-height:12.0pt;margin-bottom:.0001pt;margin:0in;"><span style="font-size: 12pt;"><span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt;">&nbsp;</span></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-size:20px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); line-height: 28.790000915527344px; text-align: justify;">Pre-lab</span></strong></span></span></p>
+
+<hr />
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>Explain in detail how a signal applied to the gate of one transistor in a differential amplifier can produce an output on the drain of the other transistor. </span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>What are parasitic oscillations? How do you minimize them?</span></span></p>
+
+<hr />
+<p class="MsoListNumber3" style="margin-left:.5in;text-indent:0in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+</div>
+
+<div class="WordSection3">
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;background:
+#F2F2F2"><span style="color:#0000FF;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><u><span style="font-size: 28pt;">Do not forward bias the JFET gates.</span></u><span style="font-size: 28pt;"> Forward gate currents larger than 50mA will burn out the JFETs Use a Heat Sink on the JFETs.</span></b></span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt">&nbsp;</span></b></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;background:
+#F2F2F2"><span style="color:#0000FF;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size: 28pt;">The Laboratory Staff will not help debug any circuit whose power supplies have not been properly decoupled!</span></b></span></span></p>
+
+<p class="MsoNormal">&nbsp;</p>
+</div>
+
+<div class="WordSection4">&nbsp;
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="252" hspace="12" src="/sites/default/files/BSC05/image001.png" width="174" /><b><span style="font-size:12.0pt">Background</span></b></span></p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Voltage Amplifiers</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Adding a drain resistor </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">d</span></sub><span style="font-size:12.0pt"> to a source-follower turns it into a voltage amplifier, as shown to the right.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="419" hspace="12" src="/sites/default/files/BSC05/image002.png" width="360" /><span style="font-size:12.0pt">The equivalent small signal circuit for the amplifier is shown to the left and is most easily understood by remembering that the current in a source follower is given by </span></span></p>
+
+<p align="center" class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><span style="position:relative;
+top:13.0pt"><img alt="" height="50" src="/sites/default/files/BSC05/image003.png" width="87" /></span>,</span></span></p>
+
+<p align="center" class="MsoNormal" style="margin-top:3.0pt;margin-right:0in;
+margin-bottom:3.0pt;margin-left:0in;text-align:center">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">where </span><i><span style="font-size:12.0pt">r</span></i><sub><span style="font-size:12.0pt">s</span></sub><span style="font-size:12.0pt"> = 1/g</span><sub><span style="font-size:12.0pt">m</span></sub><span style="font-size:12.0pt">. Since this current is unchanged by the addition of the drain resistor, the output voltage will be</span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><span style="position:relative;top:13.0pt"><img alt="" height="50" src="/sites/default/files/BSC05/image004.png" width="203" /></span>.</span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+
+<p class="MsoFooter"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Thus the gain of the amplifier is</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="position:relative;top:5.0pt"><img alt="" height="25" src="/sites/default/files/BSC05/image005.png" width="230" /></span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1)</span></span></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">where the last equality assumes that the transconductance is high.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">As with the source follower, the input current is given by the gate leakage current, so the amplifier’s input impedance is extremely high. The output impedance of the amplifier equals the drain resistance </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">d</span></sub><span style="font-size:12.0pt">, and unlike the output impedance in the follower circuit, it is not low.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="120" hspace="12" src="/sites/default/files/BSC05/image006.png" width="312" /></span></p>
+
+<p class="SmallHeader">&nbsp;</p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Differential Amplifiers</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Differential amplifiers have two inputs, </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">+</span></sub><span style="font-size:12.0pt"> and </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">-</span></sub><span style="font-size:12.0pt">, and one or two outputs. </span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">In an ideal differential amplifier, the amp’s output depends solely on the difference between the two inputs, </span><br />
+<i><span style="font-size:
+12.0pt">V</span></i><sub><span style="font-size: 12pt;">D</span></sub><span style="font-size:12.0pt"> = (</span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">+</span></sub><span style="font-size:12.0pt"> -</span><span style="font-size:12.0pt"> </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">-</span></sub><span style="font-size:12.0pt">)/2. Thus </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt">out</span></sub><span style="font-size:12.0pt"> = </span><i><span style="font-size:12.0pt">GV</span></i><sub><span style="font-size: 12pt;">D</span></sub><span style="font-size:12.0pt">. Unfortunately, the output of any real differential amplifier also depends weakly on the average of the two inputs. This average, </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">c</span></sub><span style="font-size:12.0pt"> = (</span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">+</span></sub><span style="font-size:12.0pt"> +</span><span style="font-size:12.0pt"> </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">-</span></sub><span style="font-size:12.0pt">)/2, is called the common mode of the amp.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Differential amplifiers are one of the most common building blocks in analog circuit design. The front end of every op amp, for example, consists of a differential amplifier. Differential amplifiers are used whenever a desired signal is the difference between two signals, particularly when this difference is masked by common mode noise. A typical example is an electrocardiogram. The heart generates electrical signals, which can be detected by electrodes placed against the skin, but the signal from a single electrode would be swamped by background pickup. As you know from touching the oscilloscope input, the body is an excellent antenna for noise in frequencies ranging from 60Hz to 100MHz. Fortunately these undesired signals are nearly equal everywhere on the body. By using two pickups, placed so that the signal from the heart has opposite sign, and amplifying them in a differential amplifier, the desired signal from the heart can be preferentially amplified over the unwanted noise.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Differential amplifiers are constructed from a matched pair of transistors as shown to the lower left.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">The drain of either transistor can be used as the output; in some cases both JFET drains are used to provide a differential output.</span><a href="#_ftn1" name="_ftnref1" title=""><span class="MsoFootnoteReference"><span style="font-size:16.0pt"><span class="MsoFootnoteReference"><span style="font-size: 16pt;">[1]</span></span></span></span></a><span style="font-size:12.0pt">&nbsp; </span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="301" hspace="12" src="/sites/default/files/BSC05/image007.png" width="338" /><span style="font-size:12.0pt">The amplifier’s low common mode gain is immediately apparent by redrawing the circuit below:</span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="316" hspace="12" src="/sites/default/files/BSC05/image008.png" width="359" /></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="line-height: 1.6;"><span style="font-size:12.0pt">Since the transistors are identical, and since a co</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">m</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">mon mode drive impresses the same signal on both transi</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">s</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">tors, both halves of the circuit will behave identically. Thus the co</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">mmon mode gain will be given by Eq.&nbsp;(1): &nbsp;</span></span><img alt="" height="50" src="/sites/default/files/BSC05/image009.png" width="112" /></span></p>
+
+<p align="center" class="MsoNormal" style="margin-right:3.0in;text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">.</span></span></p>
+
+<p align="center" class="MsoNormal" style="margin-right:3.0in;text-align:center">&nbsp;</p>
+
+<p align="center" class="MsoNormal" style="margin-right:3.0in;text-align:center">&nbsp;</p>
+
+<p align="center" class="MsoNormal" style="margin-right:3.0in;text-align:center">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Note that the&nbsp;</span></span></p>
+<img align="left" alt="" height="306" hspace="12" src="/sites/default/files/BSC05/image010.png" style="font-family: 'times new roman', serif;" width="338" />
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">common resistor </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt">1</span></sub><span style="font-size:12.0pt"> splits into two parallel resistors of twice the original value.) In practice, the common resistor </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt">1</span></sub><span style="font-size:12.0pt"> is always made much greater than the source resistors, so the gain reduces to </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">d</span></sub><span style="font-size:12.0pt">/2</span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt">1</span></sub><span style="font-size:12.0pt">. As </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt">1</span></sub><span style="font-size:12.0pt"> is also made much larger than the drain resistor </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">d</span></sub><span style="font-size:12.0pt">, common mode signals are strongly attenuated.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">The response of the two transistors to a small differential signal </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">D</span></sub><span style="font-size:12.0pt">, on the other hand, will be equal and opposite. The net current flow </span><i><span style="font-size:12.0pt">I</span></i><sub><span style="font-size:12.0pt">o</span></sub><span style="font-size:12.0pt"> through, and voltage drop across, the common resistor will not change.<br />
+Consequently the common resistor can be replaced with a voltage source of strength </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt">1</span></sub><i><span style="font-size:12.0pt">I</span></i><sub><span style="font-size:12.0pt">o</span></sub><span style="font-size:12.0pt">:</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Equation&nbsp;1 yields the differential gain</span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">.</span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><img alt="" height="50" src="/sites/default/files/BSC05/image011.png" style="font-family: 'times new roman', serif; font-size: 16px; line-height: 25.600000381469727px;" width="67" /></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">If </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">d</span></sub><span style="font-size:12.0pt"> is chosen to be much greater than the source<br />
+resistors, the differential gain can be quite large. The total </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt">out</span></sub><span style="font-size:12.0pt"> is the sum of </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt">out–C</span></sub><span style="font-size:12.0pt"> and </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt">out-D</span></sub><span style="font-size: 9pt;">.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">What happens if a signal is applied to just one input and the other is grounded? The signal can be decomposed into its common and differential components. For a signal applied solely to the </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">+</span></sub><span style="font-size:12.0pt"> input, the common mode signal will be </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">c</span></sub><span style="font-size:12.0pt"> = </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">+</span></sub><span style="font-size: 12pt;">/2 and the differential signal will be </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">D</span></sub><span style="font-size:12.0pt"> = </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">+</span></sub><span style="font-size: 12pt;">/2. (Note how </span><br />
+<i><span style="font-size:
+12.0pt">V</span></i><sub><span style="font-size: 12pt;">-</span></sub><span style="font-size:12.0pt"> = </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">c</span></sub><span style="font-size:12.0pt"> -</span><span style="font-size:12.0pt"> </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size: 12pt;">D</span></sub><span style="font-size:12.0pt"> = 0.)&nbsp; The gain for this single input will be half the differential gain: </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">d</span></sub><span style="font-size: 12pt;">/2(</span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">s</span></sub><span style="font-size:12.0pt"> + </span><i><span style="font-size:12.0pt">r</span></i><sub><span style="font-size:12.0pt">s</span></sub><span style="font-size:12.0pt">).</span></span></p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">JFET Linearization</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">The linear-regime resistance </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">ds</span></sub><span style="font-size:12.0pt"> between a JFET’s drain and source is given by </span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><span style="position:relative;top:15.0pt"><img alt="" height="60" src="/sites/default/files/BSC05/image012.png" width="232" /></span>,</span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">where </span><i><span style="font-size:12.0pt">k</span></i><span style="font-size:12.0pt"> is a parameter that depends on the individual JFET, </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">p</span></sub><span style="font-size:12.0pt"> is the voltage where the JFET first conducts (the pinch-off, or threshold voltage), and </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">ds</span></sub><span style="font-size:12.0pt"> is the voltage between the drain and the source. This formula is derived in books on JFET physics. </span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="228" hspace="12" src="/sites/default/files/BSC05/image013.png" width="210" /></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">The relationship between </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">ds</span></sub><span style="font-size:12.0pt"> and </span><i><span style="font-size:12.0pt">I</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">d</span></sub><span style="font-size:12.0pt"> would be perfectly linear if it were not for the dependence of </span><i><span style="font-size:12.0pt">R</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">ds</span></sub><span style="font-size:12.0pt"> on </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">ds</span></sub><span style="font-size:12.0pt">. But linearity can be restored by adding a signal equal to </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt;text-transform:uppercase">ds</span></sub><span style="font-size:12.0pt">/2 to the gate. This can be done by adding two resistors to the gate circuit as shown to the right.</span></span></p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Parasitic Oscillations</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="270" hspace="12" src="/sites/default/files/BSC05/image014.png" width="360" /></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Parasitic oscillations are unwanted, high fre­quency oscillations caused by unintended positive-feedback loops. The loops are closed by unintended capacitative coupling between two neighboring wires. Because the oscillations normally occur at very high frequencies (1 to 100 MHz), capacitances of only a few picofarads are sufficient to cause oscillations.&nbsp; Parasitic oscillations often first appear as “hair” on an otherwise undistorted signal. For example, in the scope trace on the left, the small oscillations at the top of the original sine wave are due to parasitic oscillations.</span></span></p>
+
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="270" hspace="12" src="/sites/default/files/BSC05/image015.png" width="360" /><img align="left" alt="" height="270" hspace="12" src="/sites/default/files/BSC05/image016.png" width="360" /><span style="font-size:12.0pt">Larger parasitic oscillations may cover a substantial fraction of the signal, as shown to the right, or they may completely dominate the signal, as shown below.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Touching the circuit, or even waving your hand near the circuit, can either accentuate or suppress the oscillations.</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt">There are no hard and fast rules for eliminating parasitic oscillations, but clean circuit layout goes a long way. Keep your leads short and un-jumbled. Lay your signals out from left to right, and keep large</span></b><a href="#_ftn2" name="_ftnref2" title=""><span class="MsoFootnoteReference"><b><span style="font-size:16.0pt"><span class="MsoFootnoteReference"><b><span style="font-size: 16pt;">[2]</span></b></span></span></b></span></a><b><span style="font-size:12.0pt"> output signals away from small input signals. Believe it or not, beautifully wired circuits work better!</span></b></span></p>
+
+<p class="MsoNormal" style="margin-top:9.0pt"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Unfortunately not even clean circuit layouts will always suppress the oscillations. At very high frequencies, the internal capacitances inside components, aided by the inductances formed by the component leads, can cause oscillations. An additional feedback route is through the power supplies themselves. </span><b><i><span style="font-size:12.0pt;color:black">Frequently parasitic oscillations can be tamed by liberally adding “decoupling” capacitors across the power supply</span><span style="font-size:12.0pt;color:red">.</span></i></b><span style="font-size:12.0pt"> The decoupling capacitors function by providing a low impedance path to ground at high frequency, thereby shorting out the high frequency oscillations. To be effective, decoupling capacitors should placed close to the circuit components. Try placing 0.1<span class="math-tex">$\mu F$</span>&nbsp;capacitors between +12V and ground, –12V and ground, and between +12V and –12V. Vary the locations of the capacitors, and use more than one, until the oscillations go away. Don’t be greedy; a 1 or 10<span class="math-tex">$\mu F$</span>&nbsp;capacitor will </span><i><span style="font-size:12.0pt">not </span></i><span style="font-size:12.0pt">work better than a 0.1<span class="math-tex">$\mu F$</span>&nbsp;capacitor. In fact, the larger internal inductances of large capacitors may well make them work worse than smaller capacitors.</span><a href="#_ftn3" name="_ftnref3" title=""><span class="MsoFootnoteReference"><span style="font-size:16.0pt"><span class="MsoFootnoteReference"><span style="font-size: 16pt;">[3]</span></span></span></span></a></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="141" hspace="12" src="/sites/default/files/BSC05/image017.png" width="139" /></span></p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Packaging and Leads</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img align="left" alt="" height="91" hspace="12" src="/sites/default/files/BSC05/image018.jpg" width="104" /><span style="font-size:12.0pt">Transistors are manufactured in many different packages and sizes. Ours come in a metal can. The leads are arranged in a triangle; the gate lead is the first lead clockwise from the tab when looking down (onto the can end, not the lead end) on the JFET.</span></span></p>
+
+<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<div>
+<table align="left" cellpadding="0" cellspacing="0" hspace="0" vspace="0">
+	<tbody>
+		<tr>
+			<td align="left" style="padding-top:0in;padding-right:9.0pt;
+  padding-bottom:0in;padding-left:9.0pt" valign="top">
+			<p align="center" class="MsoNormal" style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><b><img alt="" height="136" src="/sites/default/files/BSC05/image019.png" width="64" /></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">When inserting the JFET into the breadboard, there is not need to squash the leads out horizontally. In fact, doing so risks accidentally shorting the leads to the case. </span><b><i><span style="font-size:12.0pt;color:black">Instead, just bend them out gently so that they form a triangular pattern, which will insert into the transistor sockets on the breadboard.</span></i></b></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Many JFETs, including the 2N4392, are symmetrically constructed. The source and drain can be exchanged without changing the device behavior. But for simplicity, use the correct source and drain leads. Asymmetric JFETS, in which the source and drain cannot be exchanged, are normally drawn with an offset gate lead.</span></span></p>
+
+<p align="left" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:left"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:red">&nbsp;</span></b></span></p>
+
+<p align="left" class="MsoNormal" style="text-align:left;page-break-after:avoid"><span style="font-size:18px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b>In the lab</b></span></span></p>
+
+<p align="left" class="MsoNormal" style="text-align:left;page-break-after:avoid"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img alt="image016.jpg" src="/sites/default/files/BSC01/image016.jpg" style="line-height: 1.6; width: 33px; height: 40px;" /><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.1 - Amplifiers</span></strong></span></p>
+
+<hr />
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="width: 758px; vertical-align: top;">
+			<p><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">Construct the amplifier below.</span></p>
+
+			<p style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img alt="" height="255" src="/sites/default/files/BSC05/image020.png" width="172" /></span></p>
+
+			<p><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">What are the equilibrium voltages and currents in the circuit (<em>V</em><sub>GS</sub>,&nbsp;<em>V</em><sub>DS</sub>,&nbsp;<em>V</em><sub>out</sub>,&nbsp;<em>I</em><sub>DS</sub>)? (Note no signal is applied for this)&nbsp;Drive the amplifier with a 10kHz, 1V p‑p sine wave, and look at its output on the scope. What is the amp’s gain? Does it agree with the predicted value? What is the maximum undistorted output amplitude?&nbsp;(Note: vary the input voltage for this)&nbsp;What limits the amplitude?</span></p>
+
+			<p>&nbsp;</p>
+
+			<p><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">Cool the JFET with circuit cooler. How much does the gain change? Obtain four other JFETs.&nbsp; Measure and record the gain for each JFET.</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;page-break-after:
+avoid">&nbsp;</p>
+
+<hr />
+<p class="MsoNormal" style="margin-bottom:3.0pt">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-bottom:3.0pt">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.2</span></strong></span></p>
+
+<hr />
+<p class="MsoNormal" style="margin-bottom:3.0pt"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="line-height: 1.6;"><b><span style="font-size:12.0pt">5</span></b></span><span style="line-height: 1.6;"><b><span style="font-size:12.0pt">.2</span></b></span><span style="line-height: 1.6;"><b><span style="font-size:12.0pt"> </span></b></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">The gain in </span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">5</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">.1</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt"> is low. A naïve application of the gain formula [Eq.&nbsp;(1)] would imply that the gain should increase su</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">b</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">stantially if the drain resistor is changed to 47k.</span></span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="255" src="/sites/default/files/BSC05/image021.png" width="172" /></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">What actually happens?&nbsp; Why?&nbsp; (Hint: Look at V</span><sub><span style="font-size:12.0pt">DS</span></sub><span style="font-size:12.0pt"> again).</span></span></p>
+
+<hr />
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.3</span></strong><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<hr />
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt">5.3</span></b><b><span style="font-size:12.0pt"> </span></b><span style="font-size:12.0pt">Equation&nbsp;(1) suggests that decreasing the source resistor will also increase the gain. Try the circuit below.</span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="255" src="/sites/default/files/BSC05/image022.png" width="172" /></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">What is the gain now? What is the maximum undistorted output amplitude?</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Cool the JFET with circuit cooler. How much does the gain change? Measure and record the gain for the other four JFETs. Why is the fractional variation in the gain larger for this circuit than for the circuit in 5.1?</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">The behavior of a well-designed circuit should not depend on temperature or on the parameters of its particular components. Consequently, 5.3’s circuit is not very useful. The point of this section is to show you that circuit design is not as simple as plugging in to a formula and getting a useful circuit out.&nbsp; If you want more information on this subject, look under hybrid parameters and modular circuit design.</span></span></p>
+
+<hr />
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.4</span></strong></span></p>
+
+<hr />
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span><span style="line-height: 1.6;"><span style="font-size:12.0pt">Bypassing the source resistor will also i</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">n</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">crease the gain.</span></span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="255" src="/sites/default/files/BSC05/image023.png" width="172" /></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">What is the gain now, experimentally, and theoretically? Is it frequency dependent? Why does the capacitor increase the gain?&nbsp; Is it as temperature dependent as the circuit in 5.3?</span></span></p>
+
+<hr />
+<p align="left" class="MsoNormal" style="text-align:left;page-break-after:avoid">&nbsp;</p>
+
+<p align="left" class="MsoNormal" style="text-align:left;page-break-after:avoid">&nbsp;</p>
+
+<p align="left" class="MsoNormal" style="text-align:left;page-break-after:avoid"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img alt="image016.jpg" src="/sites/default/files/BSC01/image016.jpg" style="line-height: 1.6; width: 33px; height: 40px;" /><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.5 - Differntial Amplifiers</span></strong></span></p>
+
+<hr />
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="width: 758px; vertical-align: top;">
+			<p><span style="font-size:16px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">Build the differential amplifier below using your matched pair of JFETs from Lab 5.</span></span></p>
+
+			<p style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img alt="" height="271" src="/sites/default/files/BSC05/image024.png" width="359" /></span></p>
+
+			<p><span style="font-size:16px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">Leaving the&nbsp;<em>V</em><sub>-</sub>&nbsp;input attached only to its 100k resistor, drive the&nbsp;<em>V</em><sub>+</sub>&nbsp;input with a 1kHz, 0.1Vp‑p sine wave. Measure the amplitude and phase of the output signal&nbsp;<em>V</em><sub>out</sub>. Look at&nbsp;<em>V</em><sub>invout</sub>; what is the signal there? Reverse the setup; drive the&nbsp;<em>V</em><sub>-</sub>&nbsp;input. What are the amplitude and phase at&nbsp;<em>V</em><sub>out</sub>? What about at&nbsp;<em>V</em><sub>invout</sub>?</span></span></p>
+
+			<p>&nbsp;</p>
+
+			<p><span style="font-size:16px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">Now drive&nbsp;<em>V</em><sub>+</sub>&nbsp;and&nbsp;<em>V</em><sub>-</sub>&nbsp;with identical signals. What is the common mode gain?</span></span></p>
+
+			<p>&nbsp;</p>
+
+			<p><span style="font-size:16px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><em>If your&nbsp;</em></strong><strong><em>circuit does not work, partic</em></strong><strong><em>u</em></strong><strong><em>larly if only one branch of the circuit works slightly and the other not at all, it is likely that the JFETs are not sufficiently well matched</em></strong><em>.</em>&nbsp;Explore this effect by temporarily replace one of the JFETs with an unmatched JFET. Does the circuit still work? If it doesn’t, why not? Hint‑measure the voltage drop across both drain resistors.</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img alt="image016.jpg" src="/sites/default/files/BSC01/image016.jpg" style="line-height: 1.6; width: 33px; height: 40px;" /><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.6</span></strong></span></p>
+
+<hr />
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="width: 758px; vertical-align: top;">
+			<p><span style="font-size:16px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">Differential amplifier performance is vastly improved by replacing the common source resistor with a current source. Make all the measurements in 5.5&nbsp;with the circuit below.</span></span></p>
+
+			<p style="text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img alt="" height="328" src="/sites/default/files/BSC05/image025.png" width="359" /></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<p align="left" class="MsoNormal" style="text-align:left"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;Note that Exercise 5.14 uses the matched JFETs, so make sure that you keep them.</span></span></p>
+
+<p align="left" class="MsoNormal" style="text-align:left">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.7 - JFET Attenuator</span></strong></span></p>
+
+<hr />
+<p align="left" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+margin-bottom:6.0pt;text-align:left"><span style="font-size:16px;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b>5.7</b> Build the JFET attenuator shown below.&nbsp; </span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="189" src="/sites/default/files/BSC05/image026.png" width="246" /></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Drive the circuit with a 1kHz, 0.1Vp‑p </span><i><span style="font-size:12.0pt">triangle</span></i><span style="font-size:12.0pt"> wave. Vary the output amplitude with the potentiometer. Is the circuit linear (i.e. is the output still a triangle wave)? With the potentiometer set to produce a signal ¾ as large as the input, what is the largest input signal passed relatively undistorted?</span></span></p>
+
+<hr />
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.8</span></strong></span></p>
+
+<hr />
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="line-height: 1.6;"><b><span style="font-size:12.0pt">5</span></b></span><span style="line-height: 1.6;"><b><span style="font-size:12.0pt">.8</span></b></span><span style="line-height: 1.6;"><span style="font-size:12.0pt"> Add two 100k resistors to linearize the </span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">a</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">t</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">tenuator</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">.</span></span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="186" src="/sites/default/files/BSC05/image027.png" width="294" /></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">With the potentiometer set as described in 5.7, what is the largest input signal passed relatively undistorted? Now set the potentiometer for the greatest attainable attenuation. Calculate the lowest possible JFET drain-source resistance corresponding to this setting.</span></span></p>
+
+<hr />
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:blue">&nbsp;</span></b></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:blue">&nbsp;</span></b></span></p>
+
+<p class="SmallHeader"><strong><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">(D) JFET Modulator</span></span></strong></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.9</span></strong></span></p>
+
+<hr />
+<p align="left" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:left"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">The circuit in 5.8 can be used to amplitude modulate (AM) a carrier wave. Use as an input carrier wave a 1Vp‑p sine wave of about 1MHz with the circuit modification below. </span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="221" src="/sites/default/files/BSC05/image028.png" width="359" /></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Add in a 1kHz 1Vp‑p sine wave to the potentiometer signal through the </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt">modulate</span></sub><span style="font-size:12.0pt"> input. Since we only have one function generator per station, the distribution boxes with BNC outputs labeled "T1" and "T2" have been set up to provide you with the extra signal.&nbsp; Specifically, T1 should be a 1 kHz sine wave and T2 should be an audio signal.&nbsp; If they're not outputting any signal, a GSI may need to set up the amplifier that distributes them to the room.&nbsp; Set the potentiometer so that the carrier is modulated by the 1kHz wave. Sketch </span><i><span style="font-size:12.0pt">V</span></i><sub><span style="font-size:12.0pt">out</span></sub><span style="font-size:12.0pt">.</span></span></p>
+
+<hr />
+<p class="MsoFooter">&nbsp;</p>
+
+<p class="MsoFooter"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><img alt="image016.jpg" src="/sites/default/files/BSC01/image016.jpg" style="line-height: 1.6; width: 33px; height: 40px;" /><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.10</span></strong></span></p>
+
+<hr />
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="width: 758px; vertical-align: top;"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size: 12pt;">Attach a 2-meter long wire to the output of the modulator. Obtain an AM radio, and tune it to a quiet frequency in the AM band. Adjust the high frequency carrier signal until you can hear the 1kHz tone coming from the radio. Then replace the modulating signal from the wave ge</span><span style="font-size: 12pt;">n</span><span style="font-size: 12pt;">erator with the T1 audio signal from the distribution box. Listen to the radio. You have built a low power AM tran</span><span style="font-size: 12pt;">s</span><span style="font-size: 12pt;">mitter!</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:blue">&nbsp;</span></b></span></p>
+
+<h1 class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt">Analysis</span></b></span></h1>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.11</span></strong></span></p>
+
+<hr />
+<p align="left" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:left"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">What are the common mode and differential gains for a differential amplifier built with a current source? Hint‑You will have to assume a stiffness (or </span><i><span style="font-size:12.0pt">Z</span></i><sub><span style="font-size:12.0pt">out</span></sub><span style="font-size:12.0pt">) for the source.</span></span></p>
+
+<hr />
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:red">&nbsp;</span></b></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:red">&nbsp;</span></b></span></p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.12 - Suprise Circuit</span></strong></span></p>
+
+<hr />
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Build the following circuit. What does it do and why?</span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="210" src="/sites/default/files/BSC05/image029.png" width="359" /></span></span></p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:red">&nbsp;</span></b></span></p>
+
+<hr />
+<p class="SmallHeader">&nbsp;</p>
+
+<p class="SmallHeader">&nbsp;</p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.13 - Phase Splitter</span></strong></span></p>
+
+<hr />
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Design and build a unity gain phase splitter: a circuit that splits an input signal into two signals of equal magnitude and opposite phase. Maximize the undistorted output amplitude of your circuit. Hint: there is an easier and more accurate way to construct this circuit than with a differential amplifier.</span></span></p>
+
+<hr />
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><b><span style="font-size:12.0pt;color:blue">&nbsp;</span></b></span></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="SmallHeader"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.14 - High Gain Amplifier</span></strong></span></p>
+
+<hr />
+<p align="left" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:left"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">With a careful design employing feedback, it is possible to make a high gain amplifier that is almost temperature and component independent. After completing 5.15, finish the design of the circuit below by specifying the values of all the resistors and capacitors. </span></span></p>
+
+<p align="center" class="MsoNormal" style="border:none !msorm;padding:0in !msorm;
+text-align:center"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt"><img alt="" height="371" src="/sites/default/files/BSC05/image030.png" width="320" /></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Aim for a feedback controlled gain of approximately 40.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Using your matched JFETs, construct the circuit, and measure the gain. You will probably find that the gain is somewhat less than that predicted by the feedback ratio. &nbsp; If the circuit doesn't work, make sure that there is sufficent V<sub>DS</sub> across each JFET. &nbsp; You may have to adjust R<sub>2</sub> to attain this condition.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Work out an expression for the gain that includes the transconductance of the JFET and the finite stiffness of the current source.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">Insert and measure the gain for several different JFETs. Is the circuit relatively independent of the particular JFET? &nbsp;What if you use a different matched set? Is the circuit temperature dependent?</span></span></p>
+
+<hr />
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><strong><span style="color: rgb(0, 0, 255); font-size: 18px; line-height: 28.790000915527344px; text-align: justify;">Problem 5.15</span></strong></span></p>
+
+<hr />
+<p class="MsoNormal"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="line-height: 1.6;"><span style="font-size:12.0pt">In the circuit of </span></span><span style="line-height: 1.6;"><span style="font-size:
+12.0pt">5</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">.14, identify the components that perform the following functions, and explain how each function is acco</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">m</span></span><span style="line-height: 1.6;"><span style="font-size:12.0pt">plished:</span></span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>Sets the gain through feedback.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>Acts as a current source to increase the gain.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>Increases the open-loop gain by providing an AC bypass capacitor.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>Sets the current through the JFETs.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">5.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>Assures that the drain source voltage across both JFETs is approximately 12V, independent of the particular parameters of each JFET.</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm;margin-left:
+.25in;text-indent:-.25in"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">6.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal;">&nbsp;&nbsp;&nbsp;&nbsp; </span>Increases the stiffness of the current source by providing a bypass for AC signals.</span></span></p>
+
+<hr />
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="font-size:12.0pt">&nbsp;</span></span></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm"><strong><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><i><span style="font-size:12.0pt">The manual for Lab 6 &nbsp;may help you answer these questions</span></i><span style="font-size:12.0pt">.</span></span></strong></p>
+
+<p class="MsoNormal" style="border:none !msorm;padding:0in !msorm">&nbsp;</p>
+
+<div>
+<p><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><span style="color:#0000FF;"><strong style="text-align: justify;"><span style="font-size: 18px; line-height: 28.790000915527344px;">Student Evaluation of Lab Report</span></strong></span></span></p>
+
+<hr />
+<p><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;">After completing the lab write up but before turning the lab report in, please fill out the&nbsp;<a href="/StudentEvaluation"><strong>Student Evaluation of the Lab Report</strong></a>.</span></p>
+
+<hr />
+<p>&nbsp;</p>
+</div>
+</div>
+
+<div>
+<hr align="left" size="1" width="33%" />
+<div id="ftn1">
+<p class="MsoFootnoteText"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><a href="#_ftnref1" name="_ftn1" title=""><span class="MsoFootnoteReference"><span style="font-size:12.0pt"><span class="MsoFootnoteReference"><span style="font-size: 12pt;">[1]</span></span></span></span></a> Two outputs of opposite phase.</span></p>
+</div>
+
+<div id="ftn2">
+<p class="MsoFootnoteText"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><a href="#_ftnref2" name="_ftn2" title=""><span class="MsoFootnoteReference"><span style="font-size:12.0pt"><span class="MsoFootnoteReference"><span style="font-size: 12pt;">[2]</span></span></span></span></a> Parasitic oscillations generally, but not always, require circuits with gain. The followers that we built in last week’s lab were relatively immune from oscillating.</span></p>
+</div>
+
+<div id="ftn3">
+<p class="MsoFootnoteText"><span style="font-family:times new roman,serif;margin-bottom:.0001pt;margin:0in;"><a href="#_ftnref3" name="_ftn3" title=""><span class="MsoFootnoteReference"><span style="font-size:12.0pt"><span class="MsoFootnoteReference"><span style="font-size: 12pt;">[3]</span></span></span></span></a> This is particularly true of electrolytic capacitors.</span></p>
+</div>
+</div>
+</div></div></div></div>  </div>
+
+      <footer>
+      <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/14%23comment-form">Log in</a> or <a href="/user/register?destination=node/14%23comment-form">register</a> to post comments</span></li>
+</ul>    </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+  </section> <!-- /#main -->
+ </div>
+
+  
+  <div class="clear"></div>
+  
+    
+</div>
+ 
+ 
+  <div id="bottom" class="container">
+          <div class="sixteen columns botblck"><div class="region region-footer-first">
+  <div id="block-user-login" class="block block-user">
+
+        <h2 >User login</h2>
+    
+  <div class="content">
+    <form action="/Lab5?destination=node/14" method="post" id="user-login-form" accept-charset="UTF-8"><div><div id="edit-cas-login-redirection-message" class="form-item form-type-item">
+ You will be redirected to the secure CalNet login page.
+</div>
+<div class="form-item form-type-checkbox form-item-cas-identifier">
+ <input type="checkbox" id="edit-cas-identifier" name="cas_identifier" value="1" checked="checked" class="form-checkbox" />  <label class="option" for="edit-cas-identifier">Log in using CalNet </label>
+
+<div class="description">You will be redirected to the secure CalNet login page.</div>
+</div>
+<div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<input type="hidden" name="form_build_id" value="form-9bdG4eK3bZ4ZKxtpHr0kpcSNb2jc2-UQTieUQ9zZUik" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-item form-type-textfield form-item-captcha-questions-answer-given">
+  <label for="edit-captcha-questions-answer-given">What department is this class for? (i.e. Math, History, etc.)  <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-captcha-questions-answer-given" name="captcha_questions_answer_given" value="" size="60" maxlength="128" class="form-text required" />
+<div class="description">Please answer the question to prove you are human</div>
+</div>
+<input type="hidden" name="cas.return_to" value="node/14" />
+<div class="item-list"><ul class="cas-links"><li class="cas-link first"><a href="/%23">Log in using CalNet</a></li>
+<li class="uncas-link last"><a href="/%23"></a></li>
+</ul></div><div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><div class="form-actions form-wrapper" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>
+                    </div>
+  
+<div id="copyright" class="container">
+ <div class="credit">Copyright &copy; 2015, Instrumentation LAB <br/> Developed by <a href="http://www.devsaran.com" target="_blank">Devsaran</a>.</div>
+  <div class="clear"></div>
+</div>  </body>
+</html>
