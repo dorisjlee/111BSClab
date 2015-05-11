@@ -1,4 +1,5 @@
-\documentclass[authoryear, 12pt,5p, times]{elsarticle}
+%\documentclass[authoryear, 12pt,5p, times]{elsarticle}
+\documentclass[twocolumn]{article}
 %\usepackage[hypcap]{caption}
 %\geometry{margin=0.95in,top=1.4in,bottom=1.4in}
 \geometry{margin=1.1in,top=1.5in,bottom=1.5in}
@@ -13,32 +14,32 @@
 \makeatletter
 \newcommand{\rpm}{\raisebox{.3ex}{$\scriptstyle\pm$}}
 \begin{document}
-\begin{frontmatter}
+%\begin{frontmatter}
+%a)              A title page with your name, your partner’s name, the date, and a short abstract (less than 100 words) summarizing your circuit and the results of any measurements.
 \title{Final Project: Optical Theremin}
 \author{\today \quad \\Jung Lin (Doris) Lee [Lab Partner: Leah Tom]\\Prof. William Holzapfel, GSI Thomas Darlington, Thomas Mittiga, John Groh,  \\Victoria Xu, Jonathan Ma, Francisco Monsalve, Xiaofei Zhou\vspace{-30pt}}	 
-\begin{abstract}
-a)              A title page with your name, your partner’s name, the date, and a short abstract (less than 100 words) summarizing your circuit and the results of any measurements.
 
-We build a optical theremin 
-Applying our knowledge about op-amps, transistors, diodes and knowledge from the previous labs, we designed and built an optical theroemin consisting of bandpass filter, full wave rectifier, voltage controlled oscillator, and relaxation oscillator module. 
-many changes and ---- as we built
+\begin{abstract}
+Applying our knowledge about op-amps, transistors, diodes and knowledge from the previous labs, we designed and built an optical theremin that changes the frequency and amplitude of the sound output based on the amount of light incident on the device. The circuit consists of bandpass filter, full wave rectifier, voltage-controlled oscillator, and relaxation oscillator module that are connected in series to perform the modulation. With various circuit modifications described in this report, we improved the performance of the modulation control, attaining a distinctly audible dynamic range of 5V and frequency range of 1 octave. %ahat we implemented and demonstrate how they improved the performance of the modulation control and the audio quality of the theremin.  % In this report, we describe the reasoning behind the 
  \end{abstract}
 \end{frontmatter}
-\section{Abstract}
-Applying our knowledge about op-amps, transistors, diodes and knowledge from the previous labs, we designed and built an optical theremin that changes the frequency and amplitude of the sound output based on the amount of light incident on the device. The circuit consists of bandpass filter, full wave rectifier, voltage-controlled oscillator, and relaxation oscillator module that are connected in series to perform the modulation. In this report, we describe the reasoning behind the various circuit modifications that we implemented and demonstrate how they improved the performance of the modulation control and the audio quality of the theremin. 
+\newpage
 \section{Introduction}
-
-b)              A one-page introduction.
+%b)              A one-page introduction.
+ gained popularity in media ,
+Theremins named ---, Its characteristic eerily-sounding tunes are often featured on movie soundtracks and pop and rock music after Leon Theremin invented the device in the 1920s. Most existing implementations of theremin consist of two metal antennas operating at radio frequencies. The performer's hand acts as a variable capacitor determining the frequency of the oscillator circuit changes the distance between the antennas and the grounded plate, between , thereby controlling the volume and pitch of the output sounds.
+\par Our project was initially inspired by  Bonnie Eisenman's \textit{Illumaphone} project {\footnotesize[7]}, optical theremin piano with 6 light ---- cups.  Most DIY optical theremin projects contains relatively simply circuitry of only a single photoresistor whose output is fed to a microcontroller  the hassle of doing signal processing and filtering on the hardware level and leaving most of the work to the music processing software. We distinguish our project from these prior works by designing a optical theremin that takes an entirely hardware-based approach to encompasses all the signal acquisition, filtering, processing, and audio output steps. 
+\par Our design concept motivated us to include noise-reducing modules such as the bandpass filters, synced with the relaxation oscillator's output frequency. Challenging task of achieving audible sounds, were  carefully designed and ----- inverting amplifiers. Although we are unable to achieve as much as the dynamic range and smooth sound quality as the \textit{Illumaphone} with this entirely hardware-based approach, we have ---- sufficiently --- our design objectives for this project.
 \section{Circuit Description}
 c)               A description of your circuit:
 \subsection{Functional Description}
 i)                Start with a functional description: a block diagram listing all the major operations in your circuit.
-%\begin{figure}[h!]
-% \centering
-% \includegraphics[width=0.4\textwidth]{figure/q14setup}
-%\caption{High Gain Amplifier Circuit}
-%\label{q14setup}
-%\end{figure}
+\begin{figure*}[h!]
+ \centering
+\includegraphics[width=\textwidth]{figure/block}
+\caption{Block diagram of circuit modules. Green denotes modules responsible for audio output. The red and blue denotes modules responsible for amplitude and frequency modulation respectively.}
+\label{block}
+\end{figure*}
 ii)              A readable circuit diagram.
 \subsection{Component Description}
 %iii) A description of the purpose and operation of all the major components in the circuit (most likely all the active components and some of the passive components.)  Relate each major component to the appropriate function block.
@@ -113,13 +114,15 @@ Approx linear response as expected since inside operating region, use for calibr
 \end{figure}
 \section{Conclusion}
 g)              Conclusions.
+
+Possible future improvements -----etcs
 \section*{Acknowledgments}
-The author would like to acknowledge support from the GSI and Professor Holzapfel in this lab in addressing our questions about our circuits and ways to improve the performance. I would also like to thank my partner, Leah Tom, for helpful discussion and collaboration that helped this work. We also appreciate debugging assistance from ----- 
 \begin{footnotesize}
+The author would like to acknowledge support from the GSI and Professor Holzapfel in this lab in addressing our questions about how the circuits work, assisting us with the initial circuit design, and suggesting ways to improve its performance.  We also appreciate helpful discussion and debugging assistance from Elijah Campbell's group that helped this work.
 \end{footnotesize}
   \section*{References}
  \begin{footnotesize}
- \begin{itemize}
+ \begin{enumerate}[ {[}1{]} ]
  \setlength\itemsep{0.001em}
  \item Horowitz, Paul, and Winfield Hill. \textit{The Art of Electronics}. Cambridge: Cambridge UP, 1989. Print.
  \item ``Lab 5 - JFET Circuits II. " \textit{Donald A. Glaser Advanced Lab.} Regents of the University of California, n.d. Web. 01 May. 2015.
@@ -127,7 +130,8 @@ The author would like to acknowledge support from the GSI and Professor Holzapfe
   \item `` Lab 8 - Op Amps III " \textit{Donald A. Glaser Advanced Lab.} Regents of the University of California, n.d. Web. 07 May. 2015.
   \item ``Lab 12 - Final Project " \textit{Donald A. Glaser Advanced Lab.} Regents of the University of California, n.d. Web. 07 May. 2015.
  \item "Op-amp Relaxation Oscillator." \textit{Electronic and Electric Circuit Simulation.} N.p., n.d. Web. 9 May 2015.
- \end{itemize} 
+ \item Eisenman, Bonnie. "Illumaphone: Light-based Musical Instrument with Arduino." \textit{Instructables}. N.p., n.d. Web. 10 May 2015.
+\end{enumerate}
   \end{footnotesize}
 \end{document}
 %\subsubsection{Photoresistor Calibration}
