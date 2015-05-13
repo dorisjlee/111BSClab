@@ -2,13 +2,16 @@
 \BOOKMARK [1][-]{section.2}{Circuit Description}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Functional Description}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Component Description}{section.2}% 4
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Bandpass filters}{subsection.2.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Inverting Amplifer}{subsection.2.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Full Wave Rectifier}{subsection.2.2}% 7
-\BOOKMARK [3][-]{subsubsection.2.2.4}{Voltage Controlled Oscillator}{subsection.2.2}% 8
-\BOOKMARK [3][-]{subsubsection.2.2.5}{JFET Modulator}{subsection.2.2}% 9
-\BOOKMARK [3][-]{subsubsection.2.2.6}{Relaxation Oscillator}{subsection.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.3}{Simulation}{section.2}% 11
-\BOOKMARK [1][-]{section.3}{Experiment and Results}{}% 12
-\BOOKMARK [2][-]{subsection.3.1}{Calibrating Phototransistors}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Phototransistor}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Bandpass filters}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Inverting Amplifer}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Full Wave Rectifier}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Voltage Controlled Oscillator}{subsection.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.6}{JFET Modulator}{subsection.2.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.7}{Push-pull Output Stage}{subsection.2.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.2.8}{Relaxation Oscillator}{subsection.2.2}% 12
+\BOOKMARK [1][-]{section.3}{Experiment and Results}{}% 13
+\BOOKMARK [2][-]{subsection.3.1}{VCO Simulation}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.2}{Calibrating Phototransistors}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.3}{Measurements and Results}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 17

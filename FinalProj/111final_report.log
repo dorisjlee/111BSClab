@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 MAY 2015 22:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 MAY 2015 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,12 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count87
+\c@@ppsavesec=\count88
+\c@@ppsaveapp=\count89
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks14
@@ -30,7 +36,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen103
 \enit@toks=\toks15
 \enit@inbox=\box26
-\enitdp@description=\count87
+\enitdp@description=\count90
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -59,14 +65,14 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count88
+\Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count89
+\c@float@type=\count92
 \float@exts=\toks17
 \float@box=\box27
 \@float@everytoks=\toks18
@@ -92,13 +98,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count90
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count91
-\leftroot@=\count92
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count93
-\DOTSCASE@=\count94
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -107,15 +113,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen108
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks20
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks21
 \eqnshift@=\dimen109
 \alignsep@=\dimen110
@@ -188,13 +194,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen115
-\Hy@linkcounter=\count102
-\Hy@pagecounter=\count103
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count104
+\Hy@SavedSpaceFactor=\count107
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -206,7 +212,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count105
+\c@Hy@tempcnt=\count108
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -214,7 +220,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen116
-\Fld@menulength=\count106
+\Fld@menulength=\count109
 \Field@Width=\dimen117
 \Fld@charsize=\dimen118
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -226,17 +232,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count107
-\c@Item=\count108
-\c@Hfootnote=\count109
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count110
-\c@bookmark@seq@number=\count111
+\Fld@listcount=\count113
+\c@bookmark@seq@number=\count114
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -265,18 +271,18 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen124
 \caption@hangindent=\dimen125
 )
-\c@ContinuedFloat=\count112
+\c@ContinuedFloat=\count115
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
-\c@subfigure=\count113
-\c@subtable=\count114
+\c@subfigure=\count116
+\c@subtable=\count117
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks24
 \footnotemargin=\dimen126
-\c@pp@next@reset=\count115
+\c@pp@next@reset=\count118
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -289,33 +295,33 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 (./111final_report.aux)
 \openout1 = `111final_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
+\scratchcounter=\count119
 \scratchdimen=\dimen127
 \scratchbox=\box31
-\nofMPsegments=\count117
-\nofMParguments=\count118
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count119
+\MPscratchCnt=\count122
 \MPscratchDim=\dimen128
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -333,7 +339,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 20.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -341,145 +347,266 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
 (./111final_report.out) (./111final_report.out)
 \@outlinefile=\write3
 \openout3 = `111final_report.out'.
 
-LaTeX Info: Redefining \celsius on input line 19.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 19.
+LaTeX Info: Redefining \celsius on input line 20.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 20.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 19.
-Package gensymb Info: Using \Omega for \ohm on input line 19.
+LaTeX Info: Redefining \ohm on input line 20.
+Package gensymb Info: Using \Omega for \ohm on input line 20.
 
 Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<figure/block.png, id=60, 458.6736pt x 206.6922pt>
+
+Underfull \vbox (badness 6016) has occurred while \output is active []
+
+
+<figure/block.png, id=72, 458.6736pt x 206.6922pt>
 File: figure/block.png Graphic file (type png)
  <use figure/block.png>
-Package pdftex.def Info: figure/block.png used on input line 41.
+Package pdftex.def Info: figure/block.png used on input line 47.
 (pdftex.def)             Requested size: 450.0pt x 202.79034pt.
 
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-
-LaTeX Warning: Reference `inverting_amp' on page 2 undefined on input line 57.
-
-
-LaTeX Warning: Reference `photor' on page 2 undefined on input line 57.
-
-<figure/full_wave_rectifier.jpg, id=77, 1020.81375pt x 722.7pt>
-File: figure/full_wave_rectifier.jpg Graphic file (type jpg)
-
-<use figure/full_wave_rectifier.jpg>
-Package pdftex.def Info: figure/full_wave_rectifier.jpg used on input line 67.
-(pdftex.def)             Requested size: 220.0pt x 155.7524pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figure/relax_osc.png, id=78, 156.585pt x 171.64125pt>
-File: figure/relax_osc.png Graphic file (type png)
-
-<use figure/relax_osc.png>
-Package pdftex.def Info: figure/relax_osc.png used on input line 80.
-(pdftex.def)             Requested size: 0.222pt x 0.24094pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 <./figure/block.png>]
-<figure/relax_osc_beforeboost.png, id=92, 481.8pt x 234.8775pt>
-File: figure/relax_osc_beforeboost.png Graphic file (type png)
-
-<use figure/relax_osc_beforeboost.png>
-Package pdftex.def Info: figure/relax_osc_beforeboost.png used on input line 93
-.
-(pdftex.def)             Requested size: 220.0pt x 107.24931pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1946) has occurred while \output is active []
-
- [3 <./figure/full_wave_rectifier.jpg> <./figure/relax_osc.png> <./figure/relax
-_osc_beforeboost.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 108.
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
 
-<figure/phototransistor_performance.png, id=103, 411.5375pt x 288.07625pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./figure/block.png>]
+Underfull \hbox (badness 1221) in paragraph at lines 63--65
+\OT1/cmr/m/n/10 However, we found that the sig-nal that passes
+ []
+
+<figure/full_wave_rectifier.jpg, id=103, 1020.81375pt x 722.7pt>
+File: figure/full_wave_rectifier.jpg Graphic file (type jpg)
+
+<use figure/full_wave_rectifier.jpg>
+Package pdftex.def Info: figure/full_wave_rectifier.jpg used on input line 75.
+(pdftex.def)             Requested size: 220.0pt x 155.7524pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/full_wave_scope.PNG, id=106, 478.78876pt x 193.72375pt>
+File: figure/full_wave_scope.PNG Graphic file (type png)
+
+<use figure/full_wave_scope.PNG>
+Package pdftex.def Info: figure/full_wave_scope.PNG used on input line 82.
+(pdftex.def)             Requested size: 220.0pt x 89.01349pt.
+ [3 <./figure/full_wave_rectifier.jpg> <./figure/full_wave_scope.PNG>] <figure/
+vco.png, id=122, 193.6836pt x 177.7842pt>
+File: figure/vco.png Graphic file (type png)
+
+<use figure/vco.png>
+Package pdftex.def Info: figure/vco.png used on input line 91.
+(pdftex.def)             Requested size: 220.0pt x 201.95175pt.
+ <figure/q9trace.png, id=127, 262.0992pt x 121.8954pt>
+File: figure/q9trace.png Graphic file (type png)
+
+<use figure/q9trace.png>
+Package pdftex.def Info: figure/q9trace.png used on input line 105.
+(pdftex.def)             Requested size: 234.5pt x 109.06128pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+[4 <./figure/vco.png> <./figure/q9trace.png>]
+<figure/relax_osc.png, id=140, 156.585pt x 171.64125pt>
+File: figure/relax_osc.png Graphic file (type png)
+
+<use figure/relax_osc.png>
+Package pdftex.def Info: figure/relax_osc.png used on input line 120.
+(pdftex.def)             Requested size: 120.0pt x 131.54344pt.
+
+<figure/relax_osc_beforeboost.png, id=142, 481.8pt x 234.8775pt>
+File: figure/relax_osc_beforeboost.png Graphic file (type png)
+
+<use figure/relax_osc_beforeboost.png>
+Package pdftex.def Info: figure/relax_osc_beforeboost.png used on input line 12
+8.
+(pdftex.def)             Requested size: 220.0pt x 107.24931pt.
+
+<figure/vco_sim.png, id=144, 252.945pt x 250.536pt>
+File: figure/vco_sim.png Graphic file (type png)
+ <use figure/vco_sim.png>
+Package pdftex.def Info: figure/vco_sim.png used on input line 142.
+(pdftex.def)             Requested size: 230.0pt x 227.81224pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./figure/relax_osc.png> <./figure/relax_osc_beforeboost.png (PNG copy)>]
+<figure/sim_1m.png, id=155, 298.2342pt x 164.7756pt>
+File: figure/sim_1m.png Graphic file (type png)
+ <use figure/sim_1m.png>
+Package pdftex.def Info: figure/sim_1m.png used on input line 150.
+(pdftex.def)             Requested size: 230.0pt x 127.08124pt.
+
+<figure/sim_10k.png, id=156, 298.2342pt x 164.7756pt>
+File: figure/sim_10k.png Graphic file (type png)
+ <use figure/sim_10k.png>
+Package pdftex.def Info: figure/sim_10k.png used on input line 154.
+(pdftex.def)             Requested size: 230.0pt x 127.08124pt.
+
+<figure/sim_100.png, id=157, 290.5254pt x 160.9212pt>
+File: figure/sim_100.png Graphic file (type png)
+ <use figure/sim_100.png>
+Package pdftex.def Info: figure/sim_100.png used on input line 158.
+(pdftex.def)             Requested size: 230.0pt x 127.39891pt.
+
+[6 <./figure/vco_sim.png> <./figure/sim_1m.png> <./figure/sim_10k.png> <./figur
+e/sim_100.png>]
+<figure/phototransistor_performance.png, id=170, 411.5375pt x 288.07625pt>
 File: figure/phototransistor_performance.png Graphic file (type png)
 
 <use figure/phototransistor_performance.png>
 Package pdftex.def Info: figure/phototransistor_performance.png used on input l
-ine 113.
+ine 168.
 (pdftex.def)             Requested size: 220.0pt x 153.99838pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
- [4 <./figure/phototransistor_performance.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+
+<figure/a1.png, id=171, 225.9642pt x 110.3322pt>
+File: figure/a1.png Graphic file (type png)
+ <use figure/a1.png>
+Package pdftex.def Info: figure/a1.png used on input line 175.
+(pdftex.def)             Requested size: 220.0pt x 107.42444pt.
+
+<figure/a2.png, id=172, 231.7458pt x 113.223pt>
+File: figure/a2.png Graphic file (type png)
+ <use figure/a2.png>
+Package pdftex.def Info: figure/a2.png used on input line 176.
+(pdftex.def)             Requested size: 220.0pt x 107.48866pt.
+
+<figure/octave.png, id=173, 289.5618pt x 141.1674pt>
+File: figure/octave.png Graphic file (type png)
+ <use figure/octave.png>
+Package pdftex.def Info: figure/octave.png used on input line 183.
+(pdftex.def)             Requested size: 220.0pt x 107.25816pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `.' on page 7 undefined on input line 187.
+
+<figure/f1.png, id=174, 226.446pt x 110.3322pt>
+File: figure/f1.png Graphic file (type png)
+ <use figure/f1.png>
+Package pdftex.def Info: figure/f1.png used on input line 190.
+(pdftex.def)             Requested size: 220.0pt x 107.1938pt.
+
+<figure/f2.png, id=175, 235.6002pt x 114.6684pt>
+File: figure/f2.png Graphic file (type png)
+ <use figure/f2.png>
+Package pdftex.def Info: figure/f2.png used on input line 191.
+(pdftex.def)             Requested size: 220.0pt x 107.07791pt.
+ [7 <./figure/phototransistor_performance.png> <./figure/octave.png>] [8 <./fig
+ure/a1.png> <./figure/a2.png> <./figure/f1.png> <./figure/f2.png>]
+Underfull \hbox (badness 2020) in paragraph at lines 219--220
+[]\OT1/cmr/m/n/8 ``Optical Sen-sors - Photo De-tec-tors - CdS Cells."
+ []
+
+[9] <figure/freq_circuit.png, id=215, 322.3242pt x 326.6604pt>
+File: figure/freq_circuit.png Graphic file (type png)
+
+<use figure/freq_circuit.png>
+Package pdftex.def Info: figure/freq_circuit.png used on input line 243.
+(pdftex.def)             Requested size: 440.0pt x 445.932pt.
+
+<figure/amp_circuit.png, id=216, 235.6002pt x 271.2534pt>
+File: figure/amp_circuit.png Graphic file (type png)
+
+<use figure/amp_circuit.png>
+Package pdftex.def Info: figure/amp_circuit.png used on input line 249.
+(pdftex.def)             Requested size: 280.0pt x 322.3775pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figure/audio_circuit.png, id=217, 360.8682pt x 188.8656pt>
+File: figure/audio_circuit.png Graphic file (type png)
+
+<use figure/audio_circuit.png>
+Package pdftex.def Info: figure/audio_circuit.png used on input line 255.
+(pdftex.def)             Requested size: 280.0pt x 146.55087pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
+ [10
+
+ <./figure/freq_circuit.png>] [11 <./figure/amp_circuit.png> <./figure/audio_ci
+rcuit.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
  (./111final_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 Package rerunfilecheck Info: File `111final_report.out' has not changed.
-(rerunfilecheck)             Checksum: 66ED3A9593D567F03287F5BAEF3007BB;956.
+(rerunfilecheck)             Checksum: 8DA60F7E3DA89DFE928E6D0A4FB42B37;1191.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
  ) 
 Here is how much of TeX's memory you used:
- 7281 strings out of 493117
- 111116 string characters out of 6135433
- 204356 words of memory out of 5000000
- 10638 multiletter control sequences out of 15000+600000
- 9721 words of font info for 35 fonts, out of 8000000 for 9000
+ 7502 strings out of 493117
+ 114614 string characters out of 6135433
+ 206982 words of memory out of 5000000
+ 10809 multiletter control sequences out of 15000+600000
+ 10496 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,40p,892b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+ 42i,9n,40p,1110b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
 
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on 111final_report.pdf (4 pages, 425353 bytes).
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on 111final_report.pdf (11 pages, 1135431 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
